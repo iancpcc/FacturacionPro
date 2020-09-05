@@ -1,4 +1,5 @@
-﻿namespace Facturacion
+﻿using FontAwesome.WPF;
+namespace Facturacion
 {
     partial class PaginaInicio
     {
