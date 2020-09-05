@@ -28,18 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend7 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title7 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea8 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend8 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title8 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea9 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend9 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title9 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title4 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title5 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title6 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnMenu = new System.Windows.Forms.Button();
             this.btnMinize = new System.Windows.Forms.PictureBox();
@@ -533,6 +533,7 @@
             // panel9
             // 
             this.panel9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
             this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel9.Controls.Add(this.label9);
             this.panel9.Controls.Add(this.label10);
@@ -547,7 +548,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.Black;
+            this.label9.ForeColor = System.Drawing.Color.White;
             this.label9.Location = new System.Drawing.Point(133, 50);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(17, 17);
@@ -558,7 +559,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.Black;
+            this.label10.ForeColor = System.Drawing.Color.White;
             this.label10.Location = new System.Drawing.Point(93, 18);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(104, 17);
@@ -567,10 +568,9 @@
             // 
             // IconFA_Productos
             // 
-            this.IconFA_Productos.BackColor = System.Drawing.Color.White;
-            this.IconFA_Productos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.IconFA_Productos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
             this.IconFA_Productos.IconChar = FontAwesome.Sharp.IconChar.Boxes;
-            this.IconFA_Productos.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.IconFA_Productos.IconColor = System.Drawing.Color.White;
             this.IconFA_Productos.IconSize = 62;
             this.IconFA_Productos.Location = new System.Drawing.Point(13, 18);
             this.IconFA_Productos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -582,6 +582,7 @@
             // panel8
             // 
             this.panel8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
             this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel8.Controls.Add(this.label7);
             this.panel8.Controls.Add(this.label8);
@@ -596,7 +597,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(133, 50);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(17, 17);
@@ -607,7 +608,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.Black;
+            this.label8.ForeColor = System.Drawing.Color.White;
             this.label8.Location = new System.Drawing.Point(93, 18);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(123, 17);
@@ -616,10 +617,9 @@
             // 
             // IconFA_Proveedores
             // 
-            this.IconFA_Proveedores.BackColor = System.Drawing.Color.White;
-            this.IconFA_Proveedores.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.IconFA_Proveedores.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
             this.IconFA_Proveedores.IconChar = FontAwesome.Sharp.IconChar.Truck;
-            this.IconFA_Proveedores.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.IconFA_Proveedores.IconColor = System.Drawing.Color.White;
             this.IconFA_Proveedores.IconSize = 62;
             this.IconFA_Proveedores.Location = new System.Drawing.Point(13, 18);
             this.IconFA_Proveedores.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -631,6 +631,7 @@
             // panel13
             // 
             this.panel13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
             this.panel13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel13.Controls.Add(this.label6);
             this.panel13.Controls.Add(this.label5);
@@ -645,7 +646,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.ForeColor = System.Drawing.Color.Transparent;
             this.label6.Location = new System.Drawing.Point(133, 50);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(17, 17);
@@ -656,7 +657,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.ForeColor = System.Drawing.Color.Transparent;
             this.label5.Location = new System.Drawing.Point(93, 18);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(100, 17);
@@ -665,10 +666,9 @@
             // 
             // IconFA_Money
             // 
-            this.IconFA_Money.BackColor = System.Drawing.Color.White;
-            this.IconFA_Money.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.IconFA_Money.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
             this.IconFA_Money.IconChar = FontAwesome.Sharp.IconChar.DollarSign;
-            this.IconFA_Money.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.IconFA_Money.IconColor = System.Drawing.Color.White;
             this.IconFA_Money.IconSize = 62;
             this.IconFA_Money.Location = new System.Drawing.Point(13, 18);
             this.IconFA_Money.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -680,6 +680,7 @@
             // panel12
             // 
             this.panel12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(61)))), ((int)(((byte)(98)))));
             this.panel12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel12.Controls.Add(this.label15);
             this.panel12.Controls.Add(this.label16);
@@ -694,7 +695,7 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.Black;
+            this.label15.ForeColor = System.Drawing.Color.White;
             this.label15.Location = new System.Drawing.Point(133, 50);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(17, 17);
@@ -705,7 +706,7 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.Black;
+            this.label16.ForeColor = System.Drawing.Color.White;
             this.label16.Location = new System.Drawing.Point(93, 18);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(91, 17);
@@ -714,10 +715,9 @@
             // 
             // IconFA_Buy
             // 
-            this.IconFA_Buy.BackColor = System.Drawing.Color.White;
-            this.IconFA_Buy.ForeColor = System.Drawing.Color.Teal;
+            this.IconFA_Buy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(61)))), ((int)(((byte)(98)))));
             this.IconFA_Buy.IconChar = FontAwesome.Sharp.IconChar.MoneyBill;
-            this.IconFA_Buy.IconColor = System.Drawing.Color.Teal;
+            this.IconFA_Buy.IconColor = System.Drawing.Color.White;
             this.IconFA_Buy.IconSize = 62;
             this.IconFA_Buy.Location = new System.Drawing.Point(13, 18);
             this.IconFA_Buy.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -729,6 +729,7 @@
             // panel11
             // 
             this.panel11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(61)))), ((int)(((byte)(98)))));
             this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel11.Controls.Add(this.label13);
             this.panel11.Controls.Add(this.label14);
@@ -743,7 +744,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.Black;
+            this.label13.ForeColor = System.Drawing.Color.White;
             this.label13.Location = new System.Drawing.Point(133, 50);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(17, 17);
@@ -754,7 +755,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.Black;
+            this.label14.ForeColor = System.Drawing.Color.White;
             this.label14.Location = new System.Drawing.Point(93, 18);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(108, 17);
@@ -763,10 +764,9 @@
             // 
             // IconFA_Pedidos
             // 
-            this.IconFA_Pedidos.BackColor = System.Drawing.Color.White;
-            this.IconFA_Pedidos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.IconFA_Pedidos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(61)))), ((int)(((byte)(98)))));
             this.IconFA_Pedidos.IconChar = FontAwesome.Sharp.IconChar.CartArrowDown;
-            this.IconFA_Pedidos.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.IconFA_Pedidos.IconColor = System.Drawing.Color.White;
             this.IconFA_Pedidos.IconSize = 62;
             this.IconFA_Pedidos.Location = new System.Drawing.Point(13, 18);
             this.IconFA_Pedidos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -778,6 +778,7 @@
             // panel10
             // 
             this.panel10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(61)))), ((int)(((byte)(98)))));
             this.panel10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel10.Controls.Add(this.label11);
             this.panel10.Controls.Add(this.label12);
@@ -792,7 +793,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.Black;
+            this.label11.ForeColor = System.Drawing.Color.Transparent;
             this.label11.Location = new System.Drawing.Point(133, 50);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(17, 17);
@@ -803,7 +804,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.Black;
+            this.label12.ForeColor = System.Drawing.Color.Transparent;
             this.label12.Location = new System.Drawing.Point(93, 18);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(110, 17);
@@ -812,10 +813,10 @@
             // 
             // IconFA_Empleados
             // 
-            this.IconFA_Empleados.BackColor = System.Drawing.Color.White;
-            this.IconFA_Empleados.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.IconFA_Empleados.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(61)))), ((int)(((byte)(98)))));
+            this.IconFA_Empleados.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(228)))), ((int)(((byte)(234)))));
             this.IconFA_Empleados.IconChar = FontAwesome.Sharp.IconChar.UserTie;
-            this.IconFA_Empleados.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.IconFA_Empleados.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(228)))), ((int)(((byte)(234)))));
             this.IconFA_Empleados.IconSize = 62;
             this.IconFA_Empleados.Location = new System.Drawing.Point(13, 18);
             this.IconFA_Empleados.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -827,30 +828,30 @@
             // chart2
             // 
             this.chart2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            chartArea7.BackColor = System.Drawing.Color.White;
-            chartArea7.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea7);
-            legend7.BackColor = System.Drawing.SystemColors.Control;
-            legend7.Name = "Legend1";
-            this.chart2.Legends.Add(legend7);
+            chartArea4.BackColor = System.Drawing.Color.White;
+            chartArea4.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea4);
+            legend4.BackColor = System.Drawing.SystemColors.Control;
+            legend4.Name = "Legend1";
+            this.chart2.Legends.Add(legend4);
             this.chart2.Location = new System.Drawing.Point(517, 415);
             this.chart2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chart2.Name = "chart2";
-            series7.ChartArea = "ChartArea1";
-            series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
-            series7.IsValueShownAsLabel = true;
-            series7.LabelForeColor = System.Drawing.Color.White;
-            series7.Legend = "Legend1";
-            series7.Name = "Series1";
-            this.chart2.Series.Add(series7);
+            series4.ChartArea = "ChartArea1";
+            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
+            series4.IsValueShownAsLabel = true;
+            series4.LabelForeColor = System.Drawing.Color.White;
+            series4.Legend = "Legend1";
+            series4.Name = "Series1";
+            this.chart2.Series.Add(series4);
             this.chart2.Size = new System.Drawing.Size(511, 300);
             this.chart2.TabIndex = 9;
             this.chart2.Text = "chart2";
-            title7.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
-            title7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            title7.Name = "Title1";
-            title7.Text = "Pedidos a Proveedores";
-            this.chart2.Titles.Add(title7);
+            title4.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
+            title4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            title4.Name = "Title1";
+            title4.Text = "Pedidos a Proveedores";
+            this.chart2.Titles.Add(title4);
             // 
             // chart3
             // 
@@ -860,69 +861,69 @@
             this.chart3.BorderSkin.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.chart3.BorderSkin.BorderDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Solid;
             this.chart3.BorderSkin.BorderWidth = 3;
-            chartArea8.AxisX.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            chartArea8.AxisX.MajorGrid.LineColor = System.Drawing.Color.Transparent;
-            chartArea8.AxisX.TitleForeColor = System.Drawing.Color.White;
-            chartArea8.AxisY.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            chartArea8.AxisY.MajorGrid.LineColor = System.Drawing.Color.Transparent;
-            chartArea8.BackColor = System.Drawing.Color.White;
-            chartArea8.BorderColor = System.Drawing.Color.White;
-            chartArea8.Name = "ChartArea1";
-            this.chart3.ChartAreas.Add(chartArea8);
-            legend8.Enabled = false;
-            legend8.Name = "Legend1";
-            this.chart3.Legends.Add(legend8);
+            chartArea5.AxisX.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            chartArea5.AxisX.MajorGrid.LineColor = System.Drawing.Color.Transparent;
+            chartArea5.AxisX.TitleForeColor = System.Drawing.Color.White;
+            chartArea5.AxisY.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            chartArea5.AxisY.MajorGrid.LineColor = System.Drawing.Color.Transparent;
+            chartArea5.BackColor = System.Drawing.Color.White;
+            chartArea5.BorderColor = System.Drawing.Color.White;
+            chartArea5.Name = "ChartArea1";
+            this.chart3.ChartAreas.Add(chartArea5);
+            legend5.Enabled = false;
+            legend5.Name = "Legend1";
+            this.chart3.Legends.Add(legend5);
             this.chart3.Location = new System.Drawing.Point(27, 36);
             this.chart3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chart3.Name = "chart3";
             this.chart3.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.EarthTones;
-            series8.ChartArea = "ChartArea1";
-            series8.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series8.IsValueShownAsLabel = true;
-            series8.LabelForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            series8.Legend = "Legend1";
-            series8.Name = "Series1";
-            series8.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.BrightPastel;
-            this.chart3.Series.Add(series8);
+            series5.ChartArea = "ChartArea1";
+            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series5.IsValueShownAsLabel = true;
+            series5.LabelForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            series5.Legend = "Legend1";
+            series5.Name = "Series1";
+            series5.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.BrightPastel;
+            this.chart3.Series.Add(series5);
             this.chart3.Size = new System.Drawing.Size(467, 334);
             this.chart3.TabIndex = 7;
             this.chart3.Text = "chart1";
-            title8.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
-            title8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            title8.Name = "Ventas";
-            title8.Text = "Estadistica de Ventas";
-            this.chart3.Titles.Add(title8);
+            title5.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
+            title5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            title5.Name = "Ventas";
+            title5.Text = "Estadistica de Ventas";
+            this.chart3.Titles.Add(title5);
             // 
             // chart1
             // 
             this.chart1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            chartArea9.AxisX.MajorGrid.LineColor = System.Drawing.Color.Transparent;
-            chartArea9.AxisY.MajorGrid.LineColor = System.Drawing.Color.Transparent;
-            chartArea9.BackColor = System.Drawing.Color.White;
-            chartArea9.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea9);
-            legend9.Enabled = false;
-            legend9.Name = "Legend1";
-            this.chart1.Legends.Add(legend9);
+            chartArea6.AxisX.MajorGrid.LineColor = System.Drawing.Color.Transparent;
+            chartArea6.AxisY.MajorGrid.LineColor = System.Drawing.Color.Transparent;
+            chartArea6.BackColor = System.Drawing.Color.White;
+            chartArea6.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea6);
+            legend6.Enabled = false;
+            legend6.Name = "Legend1";
+            this.chart1.Legends.Add(legend6);
             this.chart1.Location = new System.Drawing.Point(27, 415);
             this.chart1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chart1.Name = "chart1";
             this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.EarthTones;
-            series9.ChartArea = "ChartArea1";
-            series9.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
-            series9.IsValueShownAsLabel = true;
-            series9.Legend = "Legend1";
-            series9.Name = "Series1";
-            series9.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.EarthTones;
-            this.chart1.Series.Add(series9);
+            series6.ChartArea = "ChartArea1";
+            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
+            series6.IsValueShownAsLabel = true;
+            series6.Legend = "Legend1";
+            series6.Name = "Series1";
+            series6.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.EarthTones;
+            this.chart1.Series.Add(series6);
             this.chart1.Size = new System.Drawing.Size(467, 300);
             this.chart1.TabIndex = 8;
             this.chart1.Text = "chart1";
-            title9.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
-            title9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            title9.Name = "Productos";
-            title9.Text = "Productos mas Vendidos";
-            this.chart1.Titles.Add(title9);
+            title6.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
+            title6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            title6.Name = "Productos";
+            title6.Text = "Productos mas Vendidos";
+            this.chart1.Titles.Add(title6);
             // 
             // Form1
             // 
