@@ -44,12 +44,13 @@ namespace Facturacion
 
         private void iconButton5_Click(object sender, EventArgs e)
         {
-            this.Close();
+
+            CerrarSistema();
         }
 
         private void btnclose_Click(object sender, EventArgs e)
         {
-            this.Close();
+            CerrarSistema();
         }
 
         private void btnMinize_Click(object sender, EventArgs e)
@@ -59,9 +60,9 @@ namespace Facturacion
 
         private void bntMaximize_Click(object sender, EventArgs e)
         {
-          
-              
-                WindowState= FormWindowState.Maximized;
+
+
+            WindowState = FormWindowState.Maximized;
             btnNormal.Visible = true;
             bntMaximize.Visible = false;
 
@@ -77,7 +78,7 @@ namespace Facturacion
 
         private void btnMenu_Click(object sender, EventArgs e)
         {
-            if(panelSidebar.Width== 245)
+            if (panelSidebar.Width == 245)
             {
                 panelSidebar.Width = 65;
                 lbMantenimiento.Visible = false;
@@ -85,16 +86,17 @@ namespace Facturacion
                 pbProfileMax.Visible = false;
                 pbProfileMin.Visible = true;
                 lbPerfil.Visible = false;
-               
+
             }
-            else{
+            else
+            {
                 panelSidebar.Width = 245;
                 lbMantenimiento.Visible = true;
                 lbMenu.Visible = true;
                 pbProfileMax.Visible = true;
                 pbProfileMin.Visible = false;
                 lbPerfil.Visible = true;
-                
+
             }
         }
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
@@ -105,6 +107,13 @@ namespace Facturacion
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void CerrarSistema() {
+            Login login = new Login();
+            login.Show();
+            this.Hide();
+
         }
     }
 }
