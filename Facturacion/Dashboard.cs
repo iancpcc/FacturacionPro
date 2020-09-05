@@ -10,11 +10,13 @@ using System.Windows.Forms;
 using System.Runtime.InteropServices;
 namespace Facturacion
 {
-    public partial class Form1 : Form
+    public partial class Dashboard : Form
     {
-        public Form1()
+        public Dashboard()
         {
             InitializeComponent();
+            abrirFormulario(new PaginaInicio(), "Principal");
+            btnProductos.Location = new Point(3, 546);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -105,6 +107,64 @@ namespace Facturacion
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+      
+        public void SubMenuCompras()
+        {
+            if (SubmenuCompras.Visible)
+            {
+                SubmenuCompras.Visible = false;
+                btnProductos.Location = new Point(3, 546);
+            }
+            else
+            {
+                SubmenuCompras.Visible = true;
+                btnProductos.Location = new Point(3, 636);
+
+            }
+        }
+
+        private void btnCompras_Click(object sender, EventArgs e)
+        {
+            SubMenuCompras();
+        }
+
+        private void iconBtnSmCompras_Click(object sender, EventArgs e)
+        {
+            SubMenuCompras();
+        }
+
+        private void btnCompras_MouseHover(object sender, EventArgs e)
+        {
+            //iconBtnSmCompras.BackColor = Color;
+        }
+
+        private void abrirFormulario(object formulario,string Titulo)
+        {
+            if (this.panelPrincipal.Controls.Count>0)
+            {
+                this.panelPrincipal.Controls.RemoveAt(0);
+            }
+             Form fh = formulario as Form;
+                fh.TopLevel = false;
+                fh.Dock = DockStyle.Fill;
+                this.panelPrincipal.Controls.Add(fh);
+                this.panelPrincipal.Tag = fh;
+                fh.Show();
+            lblFormulario.Text = Titulo;
+            
+
+        }
+
+        private void iconButtonSmProveedores_Click(object sender, EventArgs e)
+        {
+            abrirFormulario(new Proveedores(), "Proveedores");
+        }
+
+        private void btnPrincipal_Click(object sender, EventArgs e)
+        {
+            abrirFormulario(new PaginaInicio(), "Principal");
         }
     }
 }
