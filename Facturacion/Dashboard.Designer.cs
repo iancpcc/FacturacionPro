@@ -56,6 +56,8 @@
             this.btnNormal = new System.Windows.Forms.PictureBox();
             this.bntMaximize = new System.Windows.Forms.PictureBox();
             this.btnclose = new System.Windows.Forms.PictureBox();
+            this.iconBtnSmCompras = new FontAwesome.Sharp.IconButton();
+            this.iconBtnSmComprasRight = new FontAwesome.Sharp.IconButton();
             this.panel1.SuspendLayout();
             this.panelSidebar.SuspendLayout();
             this.SubmenuCompras.SuspendLayout();
@@ -119,6 +121,8 @@
             // panelSidebar
             // 
             this.panelSidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.panelSidebar.Controls.Add(this.iconBtnSmComprasRight);
+            this.panelSidebar.Controls.Add(this.iconBtnSmCompras);
             this.panelSidebar.Controls.Add(this.btnProductos);
             this.panelSidebar.Controls.Add(this.SubmenuCompras);
             this.panelSidebar.Controls.Add(this.pbProfileMin);
@@ -221,6 +225,7 @@
             // 
             // panelPrincipal
             // 
+            this.panelPrincipal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
             this.panelPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelPrincipal.Location = new System.Drawing.Point(245, 100);
             this.panelPrincipal.Name = "panelPrincipal";
@@ -355,6 +360,8 @@
             // 
             this.btnCompras.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCompras.FlatAppearance.BorderSize = 0;
+            this.btnCompras.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.btnCompras.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(89)))), ((int)(((byte)(110)))));
             this.btnCompras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCompras.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
             this.btnCompras.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -369,12 +376,13 @@
             this.btnCompras.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
             this.btnCompras.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btnCompras.Rotation = 0D;
-            this.btnCompras.Size = new System.Drawing.Size(236, 50);
+            this.btnCompras.Size = new System.Drawing.Size(202, 50);
             this.btnCompras.TabIndex = 0;
             this.btnCompras.Text = "   Compras";
             this.btnCompras.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnCompras.UseVisualStyleBackColor = true;
             this.btnCompras.Click += new System.EventHandler(this.btnCompras_Click);
+            this.btnCompras.MouseLeave += new System.EventHandler(this.btnCompras_MouseLeave);
             this.btnCompras.MouseHover += new System.EventHandler(this.btnCompras_MouseHover);
             // 
             // iconButton2
@@ -519,6 +527,46 @@
             this.btnclose.TabStop = false;
             this.btnclose.Click += new System.EventHandler(this.btnclose_Click);
             // 
+            // iconBtnSmCompras
+            // 
+            this.iconBtnSmCompras.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.iconBtnSmCompras.FlatAppearance.BorderSize = 0;
+            this.iconBtnSmCompras.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.iconBtnSmCompras.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(89)))), ((int)(((byte)(110)))));
+            this.iconBtnSmCompras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconBtnSmCompras.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.iconBtnSmCompras.IconChar = FontAwesome.Sharp.IconChar.AngleDown;
+            this.iconBtnSmCompras.IconColor = System.Drawing.Color.White;
+            this.iconBtnSmCompras.IconSize = 25;
+            this.iconBtnSmCompras.Location = new System.Drawing.Point(211, 488);
+            this.iconBtnSmCompras.Name = "iconBtnSmCompras";
+            this.iconBtnSmCompras.Rotation = 0D;
+            this.iconBtnSmCompras.Size = new System.Drawing.Size(28, 44);
+            this.iconBtnSmCompras.TabIndex = 0;
+            this.iconBtnSmCompras.UseVisualStyleBackColor = false;
+            this.iconBtnSmCompras.Visible = false;
+            this.iconBtnSmCompras.Click += new System.EventHandler(this.iconBtnSmCompras_Click_1);
+            this.iconBtnSmCompras.MouseHover += new System.EventHandler(this.iconBtnSmCompras_MouseHover);
+            // 
+            // iconBtnSmComprasRight
+            // 
+            this.iconBtnSmComprasRight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.iconBtnSmComprasRight.FlatAppearance.BorderSize = 0;
+            this.iconBtnSmComprasRight.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.iconBtnSmComprasRight.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(89)))), ((int)(((byte)(110)))));
+            this.iconBtnSmComprasRight.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconBtnSmComprasRight.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.iconBtnSmComprasRight.IconChar = FontAwesome.Sharp.IconChar.AngleRight;
+            this.iconBtnSmComprasRight.IconColor = System.Drawing.Color.White;
+            this.iconBtnSmComprasRight.IconSize = 25;
+            this.iconBtnSmComprasRight.Location = new System.Drawing.Point(177, 490);
+            this.iconBtnSmComprasRight.Name = "iconBtnSmComprasRight";
+            this.iconBtnSmComprasRight.Rotation = 0D;
+            this.iconBtnSmComprasRight.Size = new System.Drawing.Size(28, 44);
+            this.iconBtnSmComprasRight.TabIndex = 6;
+            this.iconBtnSmComprasRight.UseVisualStyleBackColor = false;
+            this.iconBtnSmComprasRight.Click += new System.EventHandler(this.iconBtnSmComprasRight_Click);
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -586,6 +634,8 @@
         private System.Windows.Forms.Panel SubmenuCompras;
         private FontAwesome.Sharp.IconButton iconButtonSmProveedores;
         private FontAwesome.Sharp.IconButton iconButton4;
+        private FontAwesome.Sharp.IconButton iconBtnSmCompras;
+        private FontAwesome.Sharp.IconButton iconBtnSmComprasRight;
     }
 }
 
