@@ -166,5 +166,10 @@ namespace Facturacion
         {
             abrirFormulario(new PaginaInicio(), "Principal");
         }
+
+        private void btnProductos_Click(object sender, EventArgs e)
+        {
+            abrirFormulario(new Productos(), "Productos");
+        }
     }
 }
