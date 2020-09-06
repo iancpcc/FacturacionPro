@@ -58,6 +58,24 @@
     <Compile Include="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="ModalesProveedores\EliminarProveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModalesProveedores\EliminarProveedores.Designer.cs">
+      <DependentUpon>EliminarProveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModalesProveedores\ModificarProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModalesProveedores\ModificarProveedor.Designer.cs">
+      <DependentUpon>ModificarProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModalesProveedores\NuevoProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModalesProveedores\NuevoProveedor.Designer.cs">
+      <DependentUpon>NuevoProveedor.cs</DependentUpon>
+    </Compile>
     <Compile Include="PaginaInicio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +98,15 @@
     </Compile>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModalesProveedores\EliminarProveedores.resx">
+      <DependentUpon>EliminarProveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModalesProveedores\ModificarProveedor.resx">
+      <DependentUpon>ModificarProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModalesProveedores\NuevoProveedor.resx">
+      <DependentUpon>NuevoProveedor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PaginaInicio.resx">
       <DependentUpon>PaginaInicio.cs</DependentUpon>

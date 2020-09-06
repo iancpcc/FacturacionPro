@@ -12,11 +12,20 @@ namespace Facturacion
 {
     public partial class Dashboard : Form
     {
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int IParam);
+
+
         public Dashboard()
         {
             InitializeComponent();
             abrirFormulario(new PaginaInicio(), "Principal");
+            //Ubicacion de iconos y botones Modulo Compras Chris
             btnProductos.Location = new Point(3, 546);
+            iconBtnSmComprasRight.Location = new Point(211, 488);
+            //
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -58,12 +67,12 @@ namespace Facturacion
         {
             WindowState = FormWindowState.Minimized;
         }
-
         private void bntMaximize_Click(object sender, EventArgs e)
         {
-          
-              
-                WindowState= FormWindowState.Maximized;
+
+            WindowState = FormWindowState.Maximized;
+            //this.Location = Screen.PrimaryScreen.WorkingArea.Location;
+            //this.Size = Screen.PrimaryScreen.WorkingArea.Size;
             btnNormal.Visible = true;
             bntMaximize.Visible = false;
 
@@ -71,6 +80,11 @@ namespace Facturacion
 
         private void btnNormal_Click(object sender, EventArgs e)
         {
+            
+            //Rectangle workingRectangle = Screen.PrimaryScreen.WorkingArea;
+            //this.Size = new Size(
+            //workingRectangle.Width - 580, workingRectangle.Height - 180);
+            //this.Location = new Point(250,160);
             WindowState = FormWindowState.Normal;
             btnNormal.Visible = false;
             bntMaximize.Visible = true;
@@ -99,10 +113,7 @@ namespace Facturacion
                 
             }
         }
-        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
-        private extern static void ReleaseCapture();
-        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
-        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int IParam);
+        
         private void panel1_MouseDown(object sender, MouseEventArgs e)
         {
             ReleaseCapture();
@@ -116,11 +127,19 @@ namespace Facturacion
             {
                 SubmenuCompras.Visible = false;
                 btnProductos.Location = new Point(3, 546);
+                iconBtnSmCompras.Visible = false;
+                iconBtnSmComprasRight.Visible = true;
+                iconBtnSmComprasRight.Location = new Point(211, 488);
+
             }
             else
             {
                 SubmenuCompras.Visible = true;
                 btnProductos.Location = new Point(3, 636);
+                iconBtnSmCompras.Visible = true;
+                iconBtnSmComprasRight.Visible = false;
+
+               
 
             }
         }
@@ -137,7 +156,9 @@ namespace Facturacion
 
         private void btnCompras_MouseHover(object sender, EventArgs e)
         {
-            //iconBtnSmCompras.BackColor = Color;
+            this.iconBtnSmCompras.MouseHover += new System.EventHandler(this.iconBtnSmCompras_MouseHover);
+            //iconBtnSmCompras.BackColor = Color.FromArgb(68, 89, 110);
+            //btnCompras.BackColor = Color.FromArgb(68,89, 110);
         }
 
         private void abrirFormulario(object formulario,string Titulo)
@@ -165,6 +186,27 @@ namespace Facturacion
         private void btnPrincipal_Click(object sender, EventArgs e)
         {
             abrirFormulario(new PaginaInicio(), "Principal");
+        }
+
+        private void btnCompras_MouseLeave(object sender, EventArgs e)
+        {
+            btnCompras.BackColor = Color.FromArgb(52, 73, 94);
+            iconBtnSmCompras.BackColor = Color.FromArgb(52, 73, 94);
+        }
+
+        private void iconBtnSmCompras_MouseHover(object sender, EventArgs e)
+        {
+
+        }
+
+        private void iconBtnSmComprasRight_Click(object sender, EventArgs e)
+        {
+            SubMenuCompras();
+        }
+
+        private void iconBtnSmCompras_Click_1(object sender, EventArgs e)
+        {
+            SubMenuCompras();
         }
     }
 }
