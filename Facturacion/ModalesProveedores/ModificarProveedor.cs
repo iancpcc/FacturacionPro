@@ -50,6 +50,7 @@ namespace Facturacion.ModalesProveedores
                 || txtTelefono.Text.Length == 0 || txtDireccion.Text.Length == 0 || cbEstado.SelectedIndex == -1)
             {
                 MessageBox.Show("Campos Vacíos");
+
                 return false;
             }
 
