@@ -58,6 +58,24 @@
     <Compile Include="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="ModalesProductos\EliminarProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModalesProductos\EliminarProducto.Designer.cs">
+      <DependentUpon>EliminarProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModalesProductos\ModificarProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModalesProductos\ModificarProducto.Designer.cs">
+      <DependentUpon>ModificarProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModalesProductos\NuevoProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModalesProductos\NuevoProducto.Designer.cs">
+      <DependentUpon>NuevoProducto.cs</DependentUpon>
+    </Compile>
     <Compile Include="ModalesProveedores\EliminarProveedores.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +122,15 @@
     </Compile>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModalesProductos\EliminarProducto.resx">
+      <DependentUpon>EliminarProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModalesProductos\ModificarProducto.resx">
+      <DependentUpon>ModificarProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModalesProductos\NuevoProducto.resx">
+      <DependentUpon>NuevoProducto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ModalesProveedores\EliminarProveedores.resx">
       <DependentUpon>EliminarProveedores.cs</DependentUpon>

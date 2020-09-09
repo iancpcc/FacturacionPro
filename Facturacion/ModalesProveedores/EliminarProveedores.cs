@@ -38,5 +38,10 @@ namespace Facturacion.ModalesProveedores
         {
             this.Close();
         }
+
+        private void EliminarProveedores_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

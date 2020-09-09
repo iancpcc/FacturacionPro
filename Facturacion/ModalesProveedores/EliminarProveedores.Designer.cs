@@ -36,6 +36,7 @@
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnGurdar = new System.Windows.Forms.Button();
             this.topBar = new System.Windows.Forms.Panel();
+            this.IpClose = new FontAwesome.Sharp.IconPictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -43,7 +44,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.IpClose = new FontAwesome.Sharp.IconPictureBox();
             this.txtEstado = new System.Windows.Forms.TextBox();
             this.topBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.IpClose)).BeginInit();
@@ -135,6 +135,22 @@
             this.topBar.TabIndex = 28;
             this.topBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.topBar_MouseDown);
             // 
+            // IpClose
+            // 
+            this.IpClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(87)))), ((int)(((byte)(155)))));
+            this.IpClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.IpClose.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.IpClose.IconChar = FontAwesome.Sharp.IconChar.WindowClose;
+            this.IpClose.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.IpClose.IconSize = 39;
+            this.IpClose.Location = new System.Drawing.Point(554, 0);
+            this.IpClose.Name = "IpClose";
+            this.IpClose.Size = new System.Drawing.Size(43, 39);
+            this.IpClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.IpClose.TabIndex = 0;
+            this.IpClose.TabStop = false;
+            this.IpClose.Click += new System.EventHandler(this.IpClose_Click);
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -206,22 +222,6 @@
             this.label1.TabIndex = 27;
             this.label1.Text = "Nombre";
             // 
-            // IpClose
-            // 
-            this.IpClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(87)))), ((int)(((byte)(155)))));
-            this.IpClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.IpClose.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.IpClose.IconChar = FontAwesome.Sharp.IconChar.WindowClose;
-            this.IpClose.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.IpClose.IconSize = 39;
-            this.IpClose.Location = new System.Drawing.Point(554, 0);
-            this.IpClose.Name = "IpClose";
-            this.IpClose.Size = new System.Drawing.Size(43, 39);
-            this.IpClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.IpClose.TabIndex = 0;
-            this.IpClose.TabStop = false;
-            this.IpClose.Click += new System.EventHandler(this.IpClose_Click);
-            // 
             // txtEstado
             // 
             this.txtEstado.Enabled = false;
@@ -256,6 +256,7 @@
             this.Name = "EliminarProveedores";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EliminarProveedores";
+            this.Load += new System.EventHandler(this.EliminarProveedores_Load);
             this.topBar.ResumeLayout(false);
             this.topBar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.IpClose)).EndInit();

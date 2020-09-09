@@ -29,47 +29,47 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnMenu = new System.Windows.Forms.Button();
+            this.btnMinize = new System.Windows.Forms.PictureBox();
+            this.btnNormal = new System.Windows.Forms.PictureBox();
+            this.bntMaximize = new System.Windows.Forms.PictureBox();
+            this.btnclose = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panelSidebar = new System.Windows.Forms.Panel();
+            this.iconBtnSmComprasRight = new FontAwesome.Sharp.IconButton();
+            this.iconBtnSmCompras = new FontAwesome.Sharp.IconButton();
+            this.btnProductos = new FontAwesome.Sharp.IconButton();
             this.SubmenuCompras = new System.Windows.Forms.Panel();
+            this.iconButton4 = new FontAwesome.Sharp.IconButton();
+            this.iconButtonSmProveedores = new FontAwesome.Sharp.IconButton();
+            this.pbProfileMin = new System.Windows.Forms.PictureBox();
             this.lbPerfil = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.lbMenu = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.lbMantenimiento = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.lblFormulario = new System.Windows.Forms.Label();
-            this.panelPrincipal = new System.Windows.Forms.Panel();
-            this.btnProductos = new FontAwesome.Sharp.IconButton();
-            this.iconButton4 = new FontAwesome.Sharp.IconButton();
-            this.iconButtonSmProveedores = new FontAwesome.Sharp.IconButton();
-            this.pbProfileMin = new System.Windows.Forms.PictureBox();
             this.pbProfileMax = new System.Windows.Forms.PictureBox();
             this.iconButton5 = new FontAwesome.Sharp.IconButton();
             this.btnCompras = new FontAwesome.Sharp.IconButton();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.iconButton6 = new FontAwesome.Sharp.IconButton();
             this.btnPrincipal = new FontAwesome.Sharp.IconButton();
-            this.btnMenu = new System.Windows.Forms.Button();
-            this.btnMinize = new System.Windows.Forms.PictureBox();
-            this.btnNormal = new System.Windows.Forms.PictureBox();
-            this.bntMaximize = new System.Windows.Forms.PictureBox();
-            this.btnclose = new System.Windows.Forms.PictureBox();
-            this.iconBtnSmCompras = new FontAwesome.Sharp.IconButton();
-            this.iconBtnSmComprasRight = new FontAwesome.Sharp.IconButton();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.lblFormulario = new System.Windows.Forms.Label();
+            this.panelPrincipal = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
-            this.panelSidebar.SuspendLayout();
-            this.SubmenuCompras.SuspendLayout();
-            this.panel6.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbProfileMin)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbProfileMax)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnNormal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bntMaximize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnclose)).BeginInit();
+            this.panelSidebar.SuspendLayout();
+            this.SubmenuCompras.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbProfileMin)).BeginInit();
+            this.panel6.SuspendLayout();
+            this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbProfileMax)).BeginInit();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -89,6 +89,74 @@
             this.panel1.Size = new System.Drawing.Size(1300, 50);
             this.panel1.TabIndex = 2;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
+            // 
+            // btnMenu
+            // 
+            this.btnMenu.BackColor = System.Drawing.Color.Transparent;
+            this.btnMenu.BackgroundImage = global::Facturacion.Properties.Resources.hamburger;
+            this.btnMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnMenu.FlatAppearance.BorderSize = 0;
+            this.btnMenu.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnMenu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMenu.Location = new System.Drawing.Point(245, 12);
+            this.btnMenu.Name = "btnMenu";
+            this.btnMenu.Size = new System.Drawing.Size(32, 33);
+            this.btnMenu.TabIndex = 3;
+            this.btnMenu.UseVisualStyleBackColor = false;
+            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
+            // 
+            // btnMinize
+            // 
+            this.btnMinize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMinize.BackColor = System.Drawing.Color.Transparent;
+            this.btnMinize.Image = global::Facturacion.Properties.Resources.minimize;
+            this.btnMinize.Location = new System.Drawing.Point(1167, 8);
+            this.btnMinize.Name = "btnMinize";
+            this.btnMinize.Size = new System.Drawing.Size(36, 32);
+            this.btnMinize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnMinize.TabIndex = 2;
+            this.btnMinize.TabStop = false;
+            this.btnMinize.Click += new System.EventHandler(this.btnMinize_Click);
+            // 
+            // btnNormal
+            // 
+            this.btnNormal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnNormal.BackColor = System.Drawing.Color.Transparent;
+            this.btnNormal.Image = global::Facturacion.Properties.Resources.maximize;
+            this.btnNormal.Location = new System.Drawing.Point(1209, 8);
+            this.btnNormal.Name = "btnNormal";
+            this.btnNormal.Size = new System.Drawing.Size(36, 32);
+            this.btnNormal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnNormal.TabIndex = 2;
+            this.btnNormal.TabStop = false;
+            this.btnNormal.Visible = false;
+            this.btnNormal.Click += new System.EventHandler(this.btnNormal_Click);
+            // 
+            // bntMaximize
+            // 
+            this.bntMaximize.BackColor = System.Drawing.Color.Transparent;
+            this.bntMaximize.Image = global::Facturacion.Properties.Resources.maximize;
+            this.bntMaximize.Location = new System.Drawing.Point(1209, 8);
+            this.bntMaximize.Name = "bntMaximize";
+            this.bntMaximize.Size = new System.Drawing.Size(36, 32);
+            this.bntMaximize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.bntMaximize.TabIndex = 2;
+            this.bntMaximize.TabStop = false;
+            this.bntMaximize.Click += new System.EventHandler(this.bntMaximize_Click);
+            // 
+            // btnclose
+            // 
+            this.btnclose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnclose.BackColor = System.Drawing.Color.Transparent;
+            this.btnclose.Image = global::Facturacion.Properties.Resources.close;
+            this.btnclose.Location = new System.Drawing.Point(1252, 8);
+            this.btnclose.Name = "btnclose";
+            this.btnclose.Size = new System.Drawing.Size(36, 32);
+            this.btnclose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnclose.TabIndex = 2;
+            this.btnclose.TabStop = false;
+            this.btnclose.Click += new System.EventHandler(this.btnclose_Click);
             // 
             // button1
             // 
@@ -142,95 +210,45 @@
             this.panelSidebar.Size = new System.Drawing.Size(245, 800);
             this.panelSidebar.TabIndex = 3;
             // 
-            // SubmenuCompras
+            // iconBtnSmComprasRight
             // 
-            this.SubmenuCompras.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
-            this.SubmenuCompras.Controls.Add(this.iconButton4);
-            this.SubmenuCompras.Controls.Add(this.iconButtonSmProveedores);
-            this.SubmenuCompras.Location = new System.Drawing.Point(43, 538);
-            this.SubmenuCompras.Name = "SubmenuCompras";
-            this.SubmenuCompras.Size = new System.Drawing.Size(202, 93);
-            this.SubmenuCompras.TabIndex = 5;
-            this.SubmenuCompras.Visible = false;
+            this.iconBtnSmComprasRight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.iconBtnSmComprasRight.FlatAppearance.BorderSize = 0;
+            this.iconBtnSmComprasRight.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.iconBtnSmComprasRight.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(89)))), ((int)(((byte)(110)))));
+            this.iconBtnSmComprasRight.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconBtnSmComprasRight.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.iconBtnSmComprasRight.IconChar = FontAwesome.Sharp.IconChar.AngleRight;
+            this.iconBtnSmComprasRight.IconColor = System.Drawing.Color.White;
+            this.iconBtnSmComprasRight.IconSize = 25;
+            this.iconBtnSmComprasRight.Location = new System.Drawing.Point(177, 490);
+            this.iconBtnSmComprasRight.Name = "iconBtnSmComprasRight";
+            this.iconBtnSmComprasRight.Rotation = 0D;
+            this.iconBtnSmComprasRight.Size = new System.Drawing.Size(28, 44);
+            this.iconBtnSmComprasRight.TabIndex = 6;
+            this.iconBtnSmComprasRight.UseVisualStyleBackColor = false;
+            this.iconBtnSmComprasRight.Click += new System.EventHandler(this.iconBtnSmComprasRight_Click);
             // 
-            // lbPerfil
+            // iconBtnSmCompras
             // 
-            this.lbPerfil.AutoSize = true;
-            this.lbPerfil.ForeColor = System.Drawing.Color.White;
-            this.lbPerfil.Location = new System.Drawing.Point(55, 173);
-            this.lbPerfil.Name = "lbPerfil";
-            this.lbPerfil.Size = new System.Drawing.Size(95, 17);
-            this.lbPerfil.TabIndex = 3;
-            this.lbPerfil.Text = "Administrador";
-            // 
-            // panel6
-            // 
-            this.panel6.Controls.Add(this.lbMenu);
-            this.panel6.Location = new System.Drawing.Point(0, 203);
-            this.panel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(245, 48);
-            this.panel6.TabIndex = 2;
-            // 
-            // lbMenu
-            // 
-            this.lbMenu.AutoSize = true;
-            this.lbMenu.ForeColor = System.Drawing.Color.White;
-            this.lbMenu.Location = new System.Drawing.Point(3, 9);
-            this.lbMenu.Name = "lbMenu";
-            this.lbMenu.Size = new System.Drawing.Size(43, 17);
-            this.lbMenu.TabIndex = 1;
-            this.lbMenu.Text = "Menu";
-            // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.lbMantenimiento);
-            this.panel5.Location = new System.Drawing.Point(0, 368);
-            this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(240, 48);
-            this.panel5.TabIndex = 2;
-            // 
-            // lbMantenimiento
-            // 
-            this.lbMantenimiento.AutoSize = true;
-            this.lbMantenimiento.ForeColor = System.Drawing.Color.White;
-            this.lbMantenimiento.Location = new System.Drawing.Point(3, 13);
-            this.lbMantenimiento.Name = "lbMantenimiento";
-            this.lbMantenimiento.Size = new System.Drawing.Size(100, 17);
-            this.lbMantenimiento.TabIndex = 0;
-            this.lbMantenimiento.Text = "Mantenimiento";
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Controls.Add(this.lblFormulario);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(245, 50);
-            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1055, 50);
-            this.panel3.TabIndex = 4;
-            // 
-            // lblFormulario
-            // 
-            this.lblFormulario.AutoSize = true;
-            this.lblFormulario.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFormulario.ForeColor = System.Drawing.Color.Black;
-            this.lblFormulario.Location = new System.Drawing.Point(13, 10);
-            this.lblFormulario.Name = "lblFormulario";
-            this.lblFormulario.Size = new System.Drawing.Size(150, 28);
-            this.lblFormulario.TabIndex = 0;
-            this.lblFormulario.Text = "Pagina Principal";
-            // 
-            // panelPrincipal
-            // 
-            this.panelPrincipal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.panelPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelPrincipal.Location = new System.Drawing.Point(245, 100);
-            this.panelPrincipal.Name = "panelPrincipal";
-            this.panelPrincipal.Size = new System.Drawing.Size(1055, 750);
-            this.panelPrincipal.TabIndex = 5;
+            this.iconBtnSmCompras.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.iconBtnSmCompras.FlatAppearance.BorderSize = 0;
+            this.iconBtnSmCompras.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.iconBtnSmCompras.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(89)))), ((int)(((byte)(110)))));
+            this.iconBtnSmCompras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconBtnSmCompras.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.iconBtnSmCompras.IconChar = FontAwesome.Sharp.IconChar.AngleDown;
+            this.iconBtnSmCompras.IconColor = System.Drawing.Color.White;
+            this.iconBtnSmCompras.IconSize = 25;
+            this.iconBtnSmCompras.Location = new System.Drawing.Point(211, 488);
+            this.iconBtnSmCompras.Name = "iconBtnSmCompras";
+            this.iconBtnSmCompras.Rotation = 0D;
+            this.iconBtnSmCompras.Size = new System.Drawing.Size(28, 44);
+            this.iconBtnSmCompras.TabIndex = 0;
+            this.iconBtnSmCompras.UseVisualStyleBackColor = false;
+            this.iconBtnSmCompras.Visible = false;
+            this.iconBtnSmCompras.Click += new System.EventHandler(this.iconBtnSmCompras_Click_1);
+            this.iconBtnSmCompras.MouseHover += new System.EventHandler(this.iconBtnSmCompras_MouseHover);
             // 
             // btnProductos
             // 
@@ -256,6 +274,17 @@
             this.btnProductos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnProductos.UseVisualStyleBackColor = true;
             this.btnProductos.Click += new System.EventHandler(this.btnProductos_Click);
+            // 
+            // SubmenuCompras
+            // 
+            this.SubmenuCompras.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.SubmenuCompras.Controls.Add(this.iconButton4);
+            this.SubmenuCompras.Controls.Add(this.iconButtonSmProveedores);
+            this.SubmenuCompras.Location = new System.Drawing.Point(43, 538);
+            this.SubmenuCompras.Name = "SubmenuCompras";
+            this.SubmenuCompras.Size = new System.Drawing.Size(202, 93);
+            this.SubmenuCompras.TabIndex = 5;
+            this.SubmenuCompras.Visible = false;
             // 
             // iconButton4
             // 
@@ -319,6 +348,54 @@
             this.pbProfileMin.TabIndex = 4;
             this.pbProfileMin.TabStop = false;
             this.pbProfileMin.Visible = false;
+            // 
+            // lbPerfil
+            // 
+            this.lbPerfil.AutoSize = true;
+            this.lbPerfil.ForeColor = System.Drawing.Color.White;
+            this.lbPerfil.Location = new System.Drawing.Point(55, 173);
+            this.lbPerfil.Name = "lbPerfil";
+            this.lbPerfil.Size = new System.Drawing.Size(95, 17);
+            this.lbPerfil.TabIndex = 3;
+            this.lbPerfil.Text = "Administrador";
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.lbMenu);
+            this.panel6.Location = new System.Drawing.Point(0, 203);
+            this.panel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(245, 48);
+            this.panel6.TabIndex = 2;
+            // 
+            // lbMenu
+            // 
+            this.lbMenu.AutoSize = true;
+            this.lbMenu.ForeColor = System.Drawing.Color.White;
+            this.lbMenu.Location = new System.Drawing.Point(3, 9);
+            this.lbMenu.Name = "lbMenu";
+            this.lbMenu.Size = new System.Drawing.Size(43, 17);
+            this.lbMenu.TabIndex = 1;
+            this.lbMenu.Text = "Menu";
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.lbMantenimiento);
+            this.panel5.Location = new System.Drawing.Point(0, 368);
+            this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(240, 48);
+            this.panel5.TabIndex = 2;
+            // 
+            // lbMantenimiento
+            // 
+            this.lbMantenimiento.AutoSize = true;
+            this.lbMantenimiento.ForeColor = System.Drawing.Color.White;
+            this.lbMantenimiento.Location = new System.Drawing.Point(3, 13);
+            this.lbMantenimiento.Name = "lbMantenimiento";
+            this.lbMantenimiento.Size = new System.Drawing.Size(100, 17);
+            this.lbMantenimiento.TabIndex = 0;
+            this.lbMantenimiento.Text = "Mantenimiento";
             // 
             // pbProfileMax
             // 
@@ -459,113 +536,36 @@
             this.btnPrincipal.UseVisualStyleBackColor = true;
             this.btnPrincipal.Click += new System.EventHandler(this.btnPrincipal_Click);
             // 
-            // btnMenu
+            // panel3
             // 
-            this.btnMenu.BackColor = System.Drawing.Color.Transparent;
-            this.btnMenu.BackgroundImage = global::Facturacion.Properties.Resources.hamburger;
-            this.btnMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnMenu.FlatAppearance.BorderSize = 0;
-            this.btnMenu.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnMenu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMenu.Location = new System.Drawing.Point(245, 12);
-            this.btnMenu.Name = "btnMenu";
-            this.btnMenu.Size = new System.Drawing.Size(32, 33);
-            this.btnMenu.TabIndex = 3;
-            this.btnMenu.UseVisualStyleBackColor = false;
-            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
+            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Controls.Add(this.lblFormulario);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(245, 50);
+            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1055, 50);
+            this.panel3.TabIndex = 4;
             // 
-            // btnMinize
+            // lblFormulario
             // 
-            this.btnMinize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMinize.BackColor = System.Drawing.Color.Transparent;
-            this.btnMinize.Image = global::Facturacion.Properties.Resources.minimize;
-            this.btnMinize.Location = new System.Drawing.Point(1167, 8);
-            this.btnMinize.Name = "btnMinize";
-            this.btnMinize.Size = new System.Drawing.Size(36, 32);
-            this.btnMinize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btnMinize.TabIndex = 2;
-            this.btnMinize.TabStop = false;
-            this.btnMinize.Click += new System.EventHandler(this.btnMinize_Click);
+            this.lblFormulario.AutoSize = true;
+            this.lblFormulario.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFormulario.ForeColor = System.Drawing.Color.Black;
+            this.lblFormulario.Location = new System.Drawing.Point(13, 10);
+            this.lblFormulario.Name = "lblFormulario";
+            this.lblFormulario.Size = new System.Drawing.Size(150, 28);
+            this.lblFormulario.TabIndex = 0;
+            this.lblFormulario.Text = "Pagina Principal";
             // 
-            // btnNormal
+            // panelPrincipal
             // 
-            this.btnNormal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnNormal.BackColor = System.Drawing.Color.Transparent;
-            this.btnNormal.Image = global::Facturacion.Properties.Resources.maximize;
-            this.btnNormal.Location = new System.Drawing.Point(1209, 8);
-            this.btnNormal.Name = "btnNormal";
-            this.btnNormal.Size = new System.Drawing.Size(36, 32);
-            this.btnNormal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btnNormal.TabIndex = 2;
-            this.btnNormal.TabStop = false;
-            this.btnNormal.Visible = false;
-            this.btnNormal.Click += new System.EventHandler(this.btnNormal_Click);
-            // 
-            // bntMaximize
-            // 
-            this.bntMaximize.BackColor = System.Drawing.Color.Transparent;
-            this.bntMaximize.Image = global::Facturacion.Properties.Resources.maximize;
-            this.bntMaximize.Location = new System.Drawing.Point(1209, 8);
-            this.bntMaximize.Name = "bntMaximize";
-            this.bntMaximize.Size = new System.Drawing.Size(36, 32);
-            this.bntMaximize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.bntMaximize.TabIndex = 2;
-            this.bntMaximize.TabStop = false;
-            this.bntMaximize.Click += new System.EventHandler(this.bntMaximize_Click);
-            // 
-            // btnclose
-            // 
-            this.btnclose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnclose.BackColor = System.Drawing.Color.Transparent;
-            this.btnclose.Image = global::Facturacion.Properties.Resources.close;
-            this.btnclose.Location = new System.Drawing.Point(1252, 8);
-            this.btnclose.Name = "btnclose";
-            this.btnclose.Size = new System.Drawing.Size(36, 32);
-            this.btnclose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btnclose.TabIndex = 2;
-            this.btnclose.TabStop = false;
-            this.btnclose.Click += new System.EventHandler(this.btnclose_Click);
-            // 
-            // iconBtnSmCompras
-            // 
-            this.iconBtnSmCompras.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
-            this.iconBtnSmCompras.FlatAppearance.BorderSize = 0;
-            this.iconBtnSmCompras.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
-            this.iconBtnSmCompras.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(89)))), ((int)(((byte)(110)))));
-            this.iconBtnSmCompras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconBtnSmCompras.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.iconBtnSmCompras.IconChar = FontAwesome.Sharp.IconChar.AngleDown;
-            this.iconBtnSmCompras.IconColor = System.Drawing.Color.White;
-            this.iconBtnSmCompras.IconSize = 25;
-            this.iconBtnSmCompras.Location = new System.Drawing.Point(211, 488);
-            this.iconBtnSmCompras.Name = "iconBtnSmCompras";
-            this.iconBtnSmCompras.Rotation = 0D;
-            this.iconBtnSmCompras.Size = new System.Drawing.Size(28, 44);
-            this.iconBtnSmCompras.TabIndex = 0;
-            this.iconBtnSmCompras.UseVisualStyleBackColor = false;
-            this.iconBtnSmCompras.Visible = false;
-            this.iconBtnSmCompras.Click += new System.EventHandler(this.iconBtnSmCompras_Click_1);
-            this.iconBtnSmCompras.MouseHover += new System.EventHandler(this.iconBtnSmCompras_MouseHover);
-            // 
-            // iconBtnSmComprasRight
-            // 
-            this.iconBtnSmComprasRight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
-            this.iconBtnSmComprasRight.FlatAppearance.BorderSize = 0;
-            this.iconBtnSmComprasRight.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
-            this.iconBtnSmComprasRight.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(89)))), ((int)(((byte)(110)))));
-            this.iconBtnSmComprasRight.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconBtnSmComprasRight.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.iconBtnSmComprasRight.IconChar = FontAwesome.Sharp.IconChar.AngleRight;
-            this.iconBtnSmComprasRight.IconColor = System.Drawing.Color.White;
-            this.iconBtnSmComprasRight.IconSize = 25;
-            this.iconBtnSmComprasRight.Location = new System.Drawing.Point(177, 490);
-            this.iconBtnSmComprasRight.Name = "iconBtnSmComprasRight";
-            this.iconBtnSmComprasRight.Rotation = 0D;
-            this.iconBtnSmComprasRight.Size = new System.Drawing.Size(28, 44);
-            this.iconBtnSmComprasRight.TabIndex = 6;
-            this.iconBtnSmComprasRight.UseVisualStyleBackColor = false;
-            this.iconBtnSmComprasRight.Click += new System.EventHandler(this.iconBtnSmComprasRight_Click);
+            this.panelPrincipal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.panelPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelPrincipal.Location = new System.Drawing.Point(245, 100);
+            this.panelPrincipal.Name = "panelPrincipal";
+            this.panelPrincipal.Size = new System.Drawing.Size(1055, 750);
+            this.panelPrincipal.TabIndex = 5;
             // 
             // Dashboard
             // 
@@ -586,21 +586,21 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panelSidebar.ResumeLayout(false);
-            this.panelSidebar.PerformLayout();
-            this.SubmenuCompras.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbProfileMin)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbProfileMax)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnNormal)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bntMaximize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnclose)).EndInit();
+            this.panelSidebar.ResumeLayout(false);
+            this.panelSidebar.PerformLayout();
+            this.SubmenuCompras.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbProfileMin)).EndInit();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbProfileMax)).EndInit();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.ResumeLayout(false);
 
         }
