@@ -52,6 +52,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConfiguracionPerfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfiguracionPerfil.Designer.cs">
+      <DependentUpon>ConfiguracionPerfil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Configuracion\Contraseña.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuracion\Contraseña.Designer.cs">
+      <DependentUpon>Contraseña.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Configuracion\Perfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuracion\Perfil.Designer.cs">
+      <DependentUpon>Perfil.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,6 +138,15 @@
     <Compile Include="Proveedores.Designer.cs">
       <DependentUpon>Proveedores.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ConfiguracionPerfil.resx">
+      <DependentUpon>ConfiguracionPerfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuracion\Contraseña.resx">
+      <DependentUpon>Contraseña.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuracion\Perfil.resx">
+      <DependentUpon>Perfil.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -213,5 +240,6 @@
   <ItemGroup>
     <None Include="Resources\window_normal.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

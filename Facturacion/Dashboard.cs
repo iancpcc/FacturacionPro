@@ -28,20 +28,7 @@ namespace Facturacion
             //
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void iconButton6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void iconButton1_Click(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -209,9 +196,10 @@ namespace Facturacion
             SubMenuCompras();
         }
 
-        private void btnProductos_Click(object sender, EventArgs e)
+        private void btnConfiguracion_Click(object sender, EventArgs e)
         {
-            abrirFormulario(new Productos(), "Productos");
+            abrirFormulario(new ConfiguracionPerfil(), "Configuración");
+            
         }
     }
 }

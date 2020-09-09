@@ -53,7 +53,7 @@
             this.iconButton5 = new FontAwesome.Sharp.IconButton();
             this.btnCompras = new FontAwesome.Sharp.IconButton();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
-            this.iconButton6 = new FontAwesome.Sharp.IconButton();
+            this.btnConfiguracion = new FontAwesome.Sharp.IconButton();
             this.btnPrincipal = new FontAwesome.Sharp.IconButton();
             this.panel3 = new System.Windows.Forms.Panel();
             this.lblFormulario = new System.Windows.Forms.Label();
@@ -173,7 +173,6 @@
             this.button1.Size = new System.Drawing.Size(32, 28);
             this.button1.TabIndex = 1;
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
@@ -201,7 +200,7 @@
             this.panelSidebar.Controls.Add(this.iconButton5);
             this.panelSidebar.Controls.Add(this.btnCompras);
             this.panelSidebar.Controls.Add(this.iconButton2);
-            this.panelSidebar.Controls.Add(this.iconButton6);
+            this.panelSidebar.Controls.Add(this.btnConfiguracion);
             this.panelSidebar.Controls.Add(this.btnPrincipal);
             this.panelSidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelSidebar.Location = new System.Drawing.Point(0, 50);
@@ -273,7 +272,17 @@
             this.btnProductos.Text = "   Productos";
             this.btnProductos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnProductos.UseVisualStyleBackColor = true;
-            this.btnProductos.Click += new System.EventHandler(this.btnProductos_Click);
+            // 
+            // SubmenuCompras
+            // 
+            this.SubmenuCompras.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.SubmenuCompras.Controls.Add(this.iconButton4);
+            this.SubmenuCompras.Controls.Add(this.iconButtonSmProveedores);
+            this.SubmenuCompras.Location = new System.Drawing.Point(43, 538);
+            this.SubmenuCompras.Name = "SubmenuCompras";
+            this.SubmenuCompras.Size = new System.Drawing.Size(202, 93);
+            this.SubmenuCompras.TabIndex = 5;
+            this.SubmenuCompras.Visible = false;
             // 
             // SubmenuCompras
             // 
@@ -486,30 +495,30 @@
             this.iconButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton2.UseVisualStyleBackColor = true;
             // 
-            // iconButton6
+            // btnConfiguracion
             // 
-            this.iconButton6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.iconButton6.FlatAppearance.BorderSize = 0;
-            this.iconButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton6.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.iconButton6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton6.ForeColor = System.Drawing.Color.White;
-            this.iconButton6.IconChar = FontAwesome.Sharp.IconChar.UserCog;
-            this.iconButton6.IconColor = System.Drawing.Color.White;
-            this.iconButton6.IconSize = 30;
-            this.iconButton6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton6.Location = new System.Drawing.Point(3, 318);
-            this.iconButton6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.iconButton6.Name = "iconButton6";
-            this.iconButton6.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
-            this.iconButton6.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.iconButton6.Rotation = 0D;
-            this.iconButton6.Size = new System.Drawing.Size(240, 50);
-            this.iconButton6.TabIndex = 0;
-            this.iconButton6.Text = "   Configuración";
-            this.iconButton6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton6.UseVisualStyleBackColor = true;
-            this.iconButton6.Click += new System.EventHandler(this.iconButton6_Click);
+            this.btnConfiguracion.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnConfiguracion.FlatAppearance.BorderSize = 0;
+            this.btnConfiguracion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConfiguracion.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnConfiguracion.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConfiguracion.ForeColor = System.Drawing.Color.White;
+            this.btnConfiguracion.IconChar = FontAwesome.Sharp.IconChar.UserCog;
+            this.btnConfiguracion.IconColor = System.Drawing.Color.White;
+            this.btnConfiguracion.IconSize = 30;
+            this.btnConfiguracion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnConfiguracion.Location = new System.Drawing.Point(3, 318);
+            this.btnConfiguracion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnConfiguracion.Name = "btnConfiguracion";
+            this.btnConfiguracion.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
+            this.btnConfiguracion.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnConfiguracion.Rotation = 0D;
+            this.btnConfiguracion.Size = new System.Drawing.Size(240, 50);
+            this.btnConfiguracion.TabIndex = 0;
+            this.btnConfiguracion.Text = "   Configuración";
+            this.btnConfiguracion.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnConfiguracion.UseVisualStyleBackColor = true;
+            this.btnConfiguracion.Click += new System.EventHandler(this.btnConfiguracion_Click);
             // 
             // btnPrincipal
             // 
@@ -621,7 +630,7 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label lbMantenimiento;
         private System.Windows.Forms.Panel panel6;
-        private FontAwesome.Sharp.IconButton iconButton6;
+        private FontAwesome.Sharp.IconButton btnConfiguracion;
         private System.Windows.Forms.Label lbPerfil;
         private System.Windows.Forms.PictureBox btnclose;
         private System.Windows.Forms.PictureBox btnMinize;

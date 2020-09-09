@@ -31,7 +31,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.bntMaximize = new System.Windows.Forms.PictureBox();
             this.btnclose = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.cbxPerfil = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -50,7 +49,6 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(87)))), ((int)(((byte)(155)))));
             this.panel1.Controls.Add(this.bntMaximize);
             this.panel1.Controls.Add(this.btnclose);
-            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -82,22 +80,6 @@
             this.btnclose.TabIndex = 2;
             this.btnclose.TabStop = false;
             this.btnclose.Click += new System.EventHandler(this.btnclose_Click);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.Transparent;
-            this.button1.Location = new System.Drawing.Point(245, 12);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(32, 28);
-            this.button1.TabIndex = 1;
-            this.button1.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
@@ -225,7 +207,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox bntMaximize;
         private System.Windows.Forms.PictureBox btnclose;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cbxPerfil;
         private System.Windows.Forms.Label label4;

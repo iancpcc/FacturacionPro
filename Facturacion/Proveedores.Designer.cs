@@ -57,7 +57,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1293, 70);
+            this.panel1.Size = new System.Drawing.Size(1300, 70);
             this.panel1.TabIndex = 1;
             // 
             // panel2
@@ -68,7 +68,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 70);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1293, 76);
+            this.panel2.Size = new System.Drawing.Size(1300, 76);
             this.panel2.TabIndex = 2;
             // 
             // panel3
@@ -77,7 +77,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1293, 1);
+            this.panel3.Size = new System.Drawing.Size(1300, 1);
             this.panel3.TabIndex = 2;
             // 
             // textBox1
@@ -145,7 +145,7 @@
             this.gvProveedores.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.gvProveedores.RowTemplate.Height = 24;
             this.gvProveedores.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gvProveedores.Size = new System.Drawing.Size(1240, 537);
+            this.gvProveedores.Size = new System.Drawing.Size(1247, 536);
             this.gvProveedores.TabIndex = 3;
             // 
             // btnEliminar
@@ -240,7 +240,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1293, 721);
+            this.ClientSize = new System.Drawing.Size(1300, 720);
             this.Controls.Add(this.gvProveedores);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
