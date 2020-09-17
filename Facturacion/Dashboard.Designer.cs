@@ -284,17 +284,6 @@
             this.SubmenuCompras.TabIndex = 5;
             this.SubmenuCompras.Visible = false;
             // 
-            // SubmenuCompras
-            // 
-            this.SubmenuCompras.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
-            this.SubmenuCompras.Controls.Add(this.iconButton4);
-            this.SubmenuCompras.Controls.Add(this.iconButtonSmProveedores);
-            this.SubmenuCompras.Location = new System.Drawing.Point(43, 538);
-            this.SubmenuCompras.Name = "SubmenuCompras";
-            this.SubmenuCompras.Size = new System.Drawing.Size(202, 93);
-            this.SubmenuCompras.TabIndex = 5;
-            this.SubmenuCompras.Visible = false;
-            // 
             // iconButton4
             // 
             this.iconButton4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -364,9 +353,9 @@
             this.lbPerfil.ForeColor = System.Drawing.Color.White;
             this.lbPerfil.Location = new System.Drawing.Point(55, 173);
             this.lbPerfil.Name = "lbPerfil";
-            this.lbPerfil.Size = new System.Drawing.Size(95, 17);
+            this.lbPerfil.Size = new System.Drawing.Size(47, 17);
             this.lbPerfil.TabIndex = 3;
-            this.lbPerfil.Text = "Administrador";
+            this.lbPerfil.Text = "Admin";
             // 
             // panel6
             // 
