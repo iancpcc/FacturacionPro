@@ -24,7 +24,7 @@ namespace Facturacion
             abrirFormulario(new PaginaInicio(), "Principal");
             //Ubicacion de iconos y botones Modulo Compras Chris
             btnProductos.Location = new Point(2,438);
-            iconBtnSmComprasRight.Location = new Point(211, 488);
+            iconBtnSmComprasRight.Location = new Point(158,396);
             //
         }
 
@@ -116,7 +116,7 @@ namespace Facturacion
                 btnProductos.Location = new Point(2, 438);
                 iconBtnSmCompras.Visible = false;
                 iconBtnSmComprasRight.Visible = true;
-                iconBtnSmComprasRight.Location = new Point(211, 488);
+                iconBtnSmComprasRight.Location = new Point(158,396);
 
             }
             else
