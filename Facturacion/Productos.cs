@@ -1,33 +1,95 @@
 ﻿using Facturacion.ModalesProductos;
+using Facturacion.Metodos;
+using Facturacion.Servicio;
+using Facturacion.Entidades;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.Script.Serialization;
 using System.Windows.Forms;
+
 
 namespace Facturacion
 {
     public partial class Productos : Form
     {
+        
+        string respuesta;
+        ClaseMetodos metodos;
+        URLServicios servicios;
+        string urlProductos,urlProveedores;
+
+
         public Productos()
         {
             InitializeComponent();
+            metodos = new ClaseMetodos();
+            servicios = new URLServicios();
+            urlProductos = servicios.devolverURLProductos();
+            urlProveedores = servicios.devolverURLProveedores();
+            cargarListadoProductos();
+
+
+        }
+      
+
+        public void cargarListadoProductos() {
+            List<Producto> listadoJSON = new List<Producto>();
+            List<Producto> listadoRecuperado = new List<Producto>();
+            List<ProductoVista> listadoProductosVista = new List<ProductoVista>();
+
+
+            respuesta =metodos.RetornarListado(urlProductos);
+            JavaScriptSerializer cadena = new JavaScriptSerializer();
+            listadoJSON = (List<Producto>)cadena.Deserialize(respuesta, typeof(List<Producto>));
+                
+            foreach (var item in listadoJSON)
+            {
+                    
+            Producto nuevo = new Producto();
+            nuevo.Id = item.Id;
+            nuevo.Codigo = item.Codigo;
+            nuevo.Nombre = item.Nombre;
+            nuevo.Precio = item.Precio;
+            nuevo.Stock = item.Stock;
+            nuevo.Estado = item.Estado;
+            nuevo.IdProveedor = item.IdProveedor;
+
+            listadoRecuperado.Add(nuevo);
+            }
+
+
+           
+            foreach (var item in listadoRecuperado)
+            {
+                ProductoVista nuevo = new ProductoVista();
+                nuevo.Id = item.Id;
+                nuevo.Codigo = item.Codigo;
+                nuevo.Nombre = item.Nombre;
+                nuevo.Precio = item.Precio;
+                nuevo.Stock = item.Stock;
+                nuevo.Estado = metodos.devolverEstado(item.Estado);
+                //nuevo.IdProveedor = item.IdProveedor;
+                listadoProductosVista.Add(nuevo);
+            }
+
             gvProductos.Rows.Clear();
-            gvProductos.DataSource = llenarProductos();
+            gvProductos.DataSource = listadoProductosVista;
+           
+            
         }
 
-        private List<Producto> llenarProductos()
-        {
-            List<Producto> lista = new List<Producto>();
-            lista.Add(new Producto(1, "Fideo Catedral", "099112AA", 12, 500,"Paca", "Activo"));
-            lista.Add(new Producto(2, "Fideo Paca", "099112AA", 12, 500, "Duran", "Activo"));
-            return lista;
-        }
 
+       
+
+      
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             NuevoProducto fr = new NuevoProducto();
@@ -86,7 +148,8 @@ namespace Facturacion
 
         }
     }
-    public class Producto
+   
+    public class ProductoVista
     {
         public int Id { get; set; }
         public string Nombre { get; set; }
@@ -95,7 +158,11 @@ namespace Facturacion
         public int Stock { get; set; }
         public string Proveedor { get; set; }
         public string Estado { get; set; }
-        public Producto(int id, string nombre,string codigo,float precio, int stock,string proveedor,string estado)
+        public ProductoVista()
+        {
+
+        }
+        public ProductoVista(int id, string nombre, string codigo, float precio, int stock, string proveedor, string estado)
         {
             Id = id;
             Nombre = nombre;

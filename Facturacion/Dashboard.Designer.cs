@@ -272,17 +272,7 @@
             this.btnProductos.Text = "   Productos";
             this.btnProductos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnProductos.UseVisualStyleBackColor = true;
-            // 
-            // SubmenuCompras
-            // 
-            this.SubmenuCompras.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
-            this.SubmenuCompras.Controls.Add(this.iconButton4);
-            this.SubmenuCompras.Controls.Add(this.iconButtonSmProveedores);
-            this.SubmenuCompras.Location = new System.Drawing.Point(43, 538);
-            this.SubmenuCompras.Name = "SubmenuCompras";
-            this.SubmenuCompras.Size = new System.Drawing.Size(202, 93);
-            this.SubmenuCompras.TabIndex = 5;
-            this.SubmenuCompras.Visible = false;
+            this.btnProductos.Click += new System.EventHandler(this.btnProductos_Click);
             // 
             // SubmenuCompras
             // 

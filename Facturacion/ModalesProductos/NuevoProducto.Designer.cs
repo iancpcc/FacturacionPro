@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.TopBar = new System.Windows.Forms.Panel();
+            this.IpClose = new FontAwesome.Sharp.IconPictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.cbProveedor = new System.Windows.Forms.ComboBox();
             this.btnCancelar = new System.Windows.Forms.Button();
@@ -44,7 +45,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.cbEstado = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.IpClose = new FontAwesome.Sharp.IconPictureBox();
+            this.LabelMensaje = new System.Windows.Forms.Label();
             this.TopBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.IpClose)).BeginInit();
             this.SuspendLayout();
@@ -60,6 +61,22 @@
             this.TopBar.Size = new System.Drawing.Size(600, 39);
             this.TopBar.TabIndex = 2;
             // 
+            // IpClose
+            // 
+            this.IpClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(87)))), ((int)(((byte)(155)))));
+            this.IpClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.IpClose.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.IpClose.IconChar = FontAwesome.Sharp.IconChar.WindowClose;
+            this.IpClose.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.IpClose.IconSize = 39;
+            this.IpClose.Location = new System.Drawing.Point(556, 0);
+            this.IpClose.Name = "IpClose";
+            this.IpClose.Size = new System.Drawing.Size(41, 39);
+            this.IpClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.IpClose.TabIndex = 0;
+            this.IpClose.TabStop = false;
+            this.IpClose.Click += new System.EventHandler(this.IpClose_Click);
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -74,9 +91,6 @@
             // cbProveedor
             // 
             this.cbProveedor.FormattingEnabled = true;
-            this.cbProveedor.Items.AddRange(new object[] {
-            "Paca",
-            "Duran"});
             this.cbProveedor.Location = new System.Drawing.Point(229, 228);
             this.cbProveedor.Name = "cbProveedor";
             this.cbProveedor.Size = new System.Drawing.Size(276, 24);
@@ -110,6 +124,7 @@
             this.btnGuardar.TabIndex = 15;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = false;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // txtStock
             // 
@@ -214,27 +229,20 @@
             this.label7.TabIndex = 17;
             this.label7.Text = "Estado";
             // 
-            // IpClose
+            // LabelMensaje
             // 
-            this.IpClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(87)))), ((int)(((byte)(155)))));
-            this.IpClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.IpClose.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.IpClose.IconChar = FontAwesome.Sharp.IconChar.WindowClose;
-            this.IpClose.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.IpClose.IconSize = 39;
-            this.IpClose.Location = new System.Drawing.Point(556, 0);
-            this.IpClose.Name = "IpClose";
-            this.IpClose.Size = new System.Drawing.Size(41, 39);
-            this.IpClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.IpClose.TabIndex = 0;
-            this.IpClose.TabStop = false;
-            this.IpClose.Click += new System.EventHandler(this.IpClose_Click);
+            this.LabelMensaje.AutoSize = true;
+            this.LabelMensaje.Location = new System.Drawing.Point(310, 384);
+            this.LabelMensaje.Name = "LabelMensaje";
+            this.LabelMensaje.Size = new System.Drawing.Size(0, 17);
+            this.LabelMensaje.TabIndex = 19;
             // 
             // NuevoProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(600, 420);
+            this.Controls.Add(this.LabelMensaje);
             this.Controls.Add(this.cbEstado);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.cbProveedor);
@@ -254,6 +262,7 @@
             this.Name = "NuevoProducto";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "NuevoProducto";
+            this.Load += new System.EventHandler(this.NuevoProducto_Load);
             this.TopBar.ResumeLayout(false);
             this.TopBar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.IpClose)).EndInit();
@@ -281,5 +290,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cbEstado;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label LabelMensaje;
     }
 }

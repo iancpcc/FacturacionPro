@@ -201,5 +201,10 @@ namespace Facturacion
             abrirFormulario(new ConfiguracionPerfil(), "Configuración");
             
         }
+
+        private void btnProductos_Click(object sender, EventArgs e)
+        {
+            abrirFormulario(new Productos(), "Productos");
+        }
     }
 }

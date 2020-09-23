@@ -1,4 +1,5 @@
 ﻿using System;
+using Facturacion.Entidades;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
