@@ -23,7 +23,7 @@ namespace Facturacion
             InitializeComponent();
             abrirFormulario(new PaginaInicio(), "Principal");
             //Ubicacion de iconos y botones Modulo Compras Chris
-            btnProductos.Location = new Point(3, 546);
+            btnProductos.Location = new Point(2,438);
             iconBtnSmComprasRight.Location = new Point(211, 488);
             //
         }
@@ -80,9 +80,9 @@ namespace Facturacion
 
         private void btnMenu_Click(object sender, EventArgs e)
         {
-            if(panelSidebar.Width== 245)
+            if(panelSidebar.Width== 220)
             {
-                panelSidebar.Width = 65;
+                panelSidebar.Width =55;
                 lbMantenimiento.Visible = false;
                 lbMenu.Visible = false;
                 pbProfileMax.Visible = false;
@@ -91,7 +91,7 @@ namespace Facturacion
                
             }
             else{
-                panelSidebar.Width = 245;
+                panelSidebar.Width = 220;
                 lbMantenimiento.Visible = true;
                 lbMenu.Visible = true;
                 pbProfileMax.Visible = true;
@@ -113,7 +113,7 @@ namespace Facturacion
             if (SubmenuCompras.Visible)
             {
                 SubmenuCompras.Visible = false;
-                btnProductos.Location = new Point(3, 546);
+                btnProductos.Location = new Point(2, 438);
                 iconBtnSmCompras.Visible = false;
                 iconBtnSmComprasRight.Visible = true;
                 iconBtnSmComprasRight.Location = new Point(211, 488);
@@ -122,7 +122,7 @@ namespace Facturacion
             else
             {
                 SubmenuCompras.Visible = true;
-                btnProductos.Location = new Point(3, 636);
+                btnProductos.Location = new Point(2, 518);
                 iconBtnSmCompras.Visible = true;
                 iconBtnSmComprasRight.Visible = false;
 
@@ -202,9 +202,9 @@ namespace Facturacion
             
         }
 
-        private void btnProductos_Click(object sender, EventArgs e)
+        private void panelPrincipal_Paint(object sender, PaintEventArgs e)
         {
-            abrirFormulario(new Productos(), "Productos");
+
         }
     }
 }

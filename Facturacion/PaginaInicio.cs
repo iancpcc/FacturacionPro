@@ -16,5 +16,10 @@ namespace Facturacion
         {
             InitializeComponent();
         }
+
+        private void panelPrincipal_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
