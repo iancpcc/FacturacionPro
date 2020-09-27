@@ -86,7 +86,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1152, 41);
+            this.panel1.Size = new System.Drawing.Size(1350, 41);
             this.panel1.TabIndex = 2;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             // 
@@ -112,7 +112,7 @@
             this.btnMinize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMinize.BackColor = System.Drawing.Color.Transparent;
             this.btnMinize.Image = global::Facturacion.Properties.Resources.minimize;
-            this.btnMinize.Location = new System.Drawing.Point(1052, 6);
+            this.btnMinize.Location = new System.Drawing.Point(1250, 6);
             this.btnMinize.Margin = new System.Windows.Forms.Padding(2);
             this.btnMinize.Name = "btnMinize";
             this.btnMinize.Size = new System.Drawing.Size(27, 26);
@@ -126,7 +126,7 @@
             this.btnNormal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnNormal.BackColor = System.Drawing.Color.Transparent;
             this.btnNormal.Image = global::Facturacion.Properties.Resources.maximize;
-            this.btnNormal.Location = new System.Drawing.Point(1085, 5);
+            this.btnNormal.Location = new System.Drawing.Point(1283, 5);
             this.btnNormal.Margin = new System.Windows.Forms.Padding(2);
             this.btnNormal.Name = "btnNormal";
             this.btnNormal.Size = new System.Drawing.Size(27, 26);
@@ -140,7 +140,7 @@
             // 
             this.bntMaximize.BackColor = System.Drawing.Color.Transparent;
             this.bntMaximize.Image = global::Facturacion.Properties.Resources.maximize;
-            this.bntMaximize.Location = new System.Drawing.Point(1083, 5);
+            this.bntMaximize.Location = new System.Drawing.Point(1283, 7);
             this.bntMaximize.Margin = new System.Windows.Forms.Padding(2);
             this.bntMaximize.Name = "bntMaximize";
             this.bntMaximize.Size = new System.Drawing.Size(27, 26);
@@ -154,7 +154,7 @@
             this.btnclose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnclose.BackColor = System.Drawing.Color.Transparent;
             this.btnclose.Image = global::Facturacion.Properties.Resources.close;
-            this.btnclose.Location = new System.Drawing.Point(1116, 6);
+            this.btnclose.Location = new System.Drawing.Point(1314, 6);
             this.btnclose.Margin = new System.Windows.Forms.Padding(2);
             this.btnclose.Name = "btnclose";
             this.btnclose.Size = new System.Drawing.Size(27, 26);
@@ -212,7 +212,7 @@
             this.panelSidebar.Location = new System.Drawing.Point(0, 41);
             this.panelSidebar.Margin = new System.Windows.Forms.Padding(2);
             this.panelSidebar.Name = "panelSidebar";
-            this.panelSidebar.Size = new System.Drawing.Size(220, 823);
+            this.panelSidebar.Size = new System.Drawing.Size(220, 879);
             this.panelSidebar.TabIndex = 3;
             // 
             // SubmenuCompras
@@ -251,6 +251,7 @@
             this.iconButton4.Text = "   Realizar Compra";
             this.iconButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton4.UseVisualStyleBackColor = true;
+            this.iconButton4.Click += new System.EventHandler(this.iconButton4_Click);
             // 
             // iconButtonSmProveedores
             // 
@@ -431,7 +432,7 @@
             this.iconButton5.IconColor = System.Drawing.Color.White;
             this.iconButton5.IconSize = 30;
             this.iconButton5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton5.Location = new System.Drawing.Point(2, 773);
+            this.iconButton5.Location = new System.Drawing.Point(2, 829);
             this.iconButton5.Margin = new System.Windows.Forms.Padding(2);
             this.iconButton5.Name = "iconButton5";
             this.iconButton5.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
@@ -555,7 +556,7 @@
             this.panel3.Location = new System.Drawing.Point(220, 41);
             this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(932, 41);
+            this.panel3.Size = new System.Drawing.Size(1130, 41);
             this.panel3.TabIndex = 4;
             // 
             // lblFormulario
@@ -577,7 +578,7 @@
             this.panelPrincipal.Location = new System.Drawing.Point(220, 82);
             this.panelPrincipal.Margin = new System.Windows.Forms.Padding(2);
             this.panelPrincipal.Name = "panelPrincipal";
-            this.panelPrincipal.Size = new System.Drawing.Size(932, 782);
+            this.panelPrincipal.Size = new System.Drawing.Size(1130, 838);
             this.panelPrincipal.TabIndex = 5;
             this.panelPrincipal.Paint += new System.Windows.Forms.PaintEventHandler(this.panelPrincipal_Paint);
             // 
@@ -586,7 +587,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1152, 864);
+            this.ClientSize = new System.Drawing.Size(1350, 920);
             this.Controls.Add(this.panelPrincipal);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panelSidebar);

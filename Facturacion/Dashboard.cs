@@ -211,5 +211,11 @@ namespace Facturacion
         {
             abrirFormulario(new Productos(), "Productos");
         }
+
+        private void iconButton4_Click(object sender, EventArgs e)
+        {
+            abrirFormulario(new Compras(), "Compras");
+
+        }
     }
 }

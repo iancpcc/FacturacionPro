@@ -58,8 +58,9 @@
             this.TopBar.Controls.Add(this.label3);
             this.TopBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.TopBar.Location = new System.Drawing.Point(0, 0);
+            this.TopBar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.TopBar.Name = "TopBar";
-            this.TopBar.Size = new System.Drawing.Size(600, 39);
+            this.TopBar.Size = new System.Drawing.Size(450, 32);
             this.TopBar.TabIndex = 3;
             // 
             // IpClose
@@ -69,10 +70,11 @@
             this.IpClose.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.IpClose.IconChar = FontAwesome.Sharp.IconChar.WindowClose;
             this.IpClose.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.IpClose.IconSize = 39;
-            this.IpClose.Location = new System.Drawing.Point(556, 0);
+            this.IpClose.IconSize = 31;
+            this.IpClose.Location = new System.Drawing.Point(417, 0);
+            this.IpClose.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.IpClose.Name = "IpClose";
-            this.IpClose.Size = new System.Drawing.Size(41, 39);
+            this.IpClose.Size = new System.Drawing.Size(31, 32);
             this.IpClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.IpClose.TabIndex = 0;
             this.IpClose.TabStop = false;
@@ -83,9 +85,10 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(248, 4);
+            this.label3.Location = new System.Drawing.Point(186, 3);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(182, 28);
+            this.label3.Size = new System.Drawing.Size(143, 21);
             this.label3.TabIndex = 0;
             this.label3.Text = "Modificar Producto";
             // 
@@ -95,18 +98,20 @@
             this.cbEstado.Items.AddRange(new object[] {
             "Activo",
             "Inactivo"});
-            this.cbEstado.Location = new System.Drawing.Point(229, 295);
+            this.cbEstado.Location = new System.Drawing.Point(150, 247);
+            this.cbEstado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbEstado.Name = "cbEstado";
-            this.cbEstado.Size = new System.Drawing.Size(276, 24);
+            this.cbEstado.Size = new System.Drawing.Size(208, 21);
             this.cbEstado.TabIndex = 32;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(96, 292);
+            this.label7.Location = new System.Drawing.Point(50, 244);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(71, 28);
+            this.label7.Size = new System.Drawing.Size(56, 21);
             this.label7.TabIndex = 31;
             this.label7.Text = "Estado";
             // 
@@ -116,9 +121,10 @@
             this.cbProveedor.Items.AddRange(new object[] {
             "Paca",
             "Duran"});
-            this.cbProveedor.Location = new System.Drawing.Point(229, 256);
+            this.cbProveedor.Location = new System.Drawing.Point(150, 215);
+            this.cbProveedor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbProveedor.Name = "cbProveedor";
-            this.cbProveedor.Size = new System.Drawing.Size(276, 24);
+            this.cbProveedor.Size = new System.Drawing.Size(208, 21);
             this.cbProveedor.TabIndex = 30;
             // 
             // btnCancelar
@@ -128,9 +134,10 @@
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.ForeColor = System.Drawing.Color.White;
-            this.btnCancelar.Location = new System.Drawing.Point(345, 347);
+            this.btnCancelar.Location = new System.Drawing.Point(237, 289);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(147, 51);
+            this.btnCancelar.Size = new System.Drawing.Size(110, 41);
             this.btnCancelar.TabIndex = 28;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
@@ -143,52 +150,58 @@
             this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardar.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.ForeColor = System.Drawing.Color.White;
-            this.btnGuardar.Location = new System.Drawing.Point(178, 347);
+            this.btnGuardar.Location = new System.Drawing.Point(112, 289);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(147, 51);
+            this.btnGuardar.Size = new System.Drawing.Size(110, 41);
             this.btnGuardar.TabIndex = 29;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = false;
             // 
             // txtStock
             // 
-            this.txtStock.Location = new System.Drawing.Point(229, 212);
+            this.txtStock.Location = new System.Drawing.Point(150, 179);
+            this.txtStock.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtStock.Multiline = true;
             this.txtStock.Name = "txtStock";
-            this.txtStock.Size = new System.Drawing.Size(276, 32);
+            this.txtStock.Size = new System.Drawing.Size(208, 27);
             this.txtStock.TabIndex = 24;
             // 
             // txtPrecio
             // 
-            this.txtPrecio.Location = new System.Drawing.Point(229, 174);
+            this.txtPrecio.Location = new System.Drawing.Point(150, 148);
+            this.txtPrecio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtPrecio.Multiline = true;
             this.txtPrecio.Name = "txtPrecio";
-            this.txtPrecio.Size = new System.Drawing.Size(276, 32);
+            this.txtPrecio.Size = new System.Drawing.Size(208, 27);
             this.txtPrecio.TabIndex = 25;
             // 
             // txtCodigo
             // 
-            this.txtCodigo.Location = new System.Drawing.Point(229, 136);
+            this.txtCodigo.Location = new System.Drawing.Point(150, 117);
+            this.txtCodigo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtCodigo.Multiline = true;
             this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(276, 32);
+            this.txtCodigo.Size = new System.Drawing.Size(208, 27);
             this.txtCodigo.TabIndex = 26;
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(229, 98);
+            this.txtNombre.Location = new System.Drawing.Point(150, 87);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtNombre.Multiline = true;
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(276, 32);
+            this.txtNombre.Size = new System.Drawing.Size(208, 27);
             this.txtNombre.TabIndex = 27;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(96, 256);
+            this.label5.Location = new System.Drawing.Point(50, 215);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(103, 28);
+            this.label5.Size = new System.Drawing.Size(82, 21);
             this.label5.TabIndex = 19;
             this.label5.Text = "Proveedor";
             // 
@@ -196,9 +209,10 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(96, 174);
+            this.label6.Location = new System.Drawing.Point(50, 148);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(66, 28);
+            this.label6.Size = new System.Drawing.Size(53, 21);
             this.label6.TabIndex = 20;
             this.label6.Text = "Precio";
             // 
@@ -206,9 +220,10 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(96, 212);
+            this.label4.Location = new System.Drawing.Point(50, 179);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(60, 28);
+            this.label4.Size = new System.Drawing.Size(47, 21);
             this.label4.TabIndex = 21;
             this.label4.Text = "Stock";
             // 
@@ -216,9 +231,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(96, 136);
+            this.label2.Location = new System.Drawing.Point(50, 117);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(77, 28);
+            this.label2.Size = new System.Drawing.Size(60, 21);
             this.label2.TabIndex = 22;
             this.label2.Text = "Código";
             // 
@@ -226,36 +242,40 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(96, 98);
+            this.label1.Location = new System.Drawing.Point(50, 87);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(85, 28);
+            this.label1.Size = new System.Drawing.Size(68, 21);
             this.label1.TabIndex = 23;
             this.label1.Text = "Nombre";
             // 
             // txtId
             // 
             this.txtId.Enabled = false;
-            this.txtId.Location = new System.Drawing.Point(229, 60);
+            this.txtId.Location = new System.Drawing.Point(150, 56);
+            this.txtId.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtId.Multiline = true;
             this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(276, 32);
+            this.txtId.Size = new System.Drawing.Size(208, 27);
             this.txtId.TabIndex = 36;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(96, 60);
+            this.label8.Location = new System.Drawing.Point(50, 56);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(34, 28);
+            this.label8.Size = new System.Drawing.Size(27, 21);
             this.label8.TabIndex = 35;
             this.label8.Text = " Id";
             // 
             // ModificarProducto
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 420);
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.ClientSize = new System.Drawing.Size(450, 341);
             this.Controls.Add(this.txtId);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.cbEstado);
@@ -274,6 +294,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.TopBar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "ModificarProducto";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ModificarProducto";

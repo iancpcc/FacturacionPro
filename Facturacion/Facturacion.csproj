@@ -54,6 +54,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Compras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compras.Designer.cs">
+      <DependentUpon>Compras.cs</DependentUpon>
+    </Compile>
     <Compile Include="ConfiguracionPerfil.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +87,18 @@
     <Compile Include="Entidades\Producto.cs" />
     <Compile Include="Entidades\Proveedor.cs" />
     <Compile Include="Metodos\ClaseMetodos.cs" />
+    <Compile Include="ModalesCompras\ModalClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModalesCompras\ModalClientes.Designer.cs">
+      <DependentUpon>ModalClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModalesCompras\ModalProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModalesCompras\ModalProductos.Designer.cs">
+      <DependentUpon>ModalProductos.cs</DependentUpon>
+    </Compile>
     <Compile Include="ModalesProductos\EliminarProducto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -144,6 +162,9 @@
       <DependentUpon>Proveedores.cs</DependentUpon>
     </Compile>
     <Compile Include="Servicio\URLServicios.cs" />
+    <EmbeddedResource Include="Compras.resx">
+      <DependentUpon>Compras.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ConfiguracionPerfil.resx">
       <DependentUpon>ConfiguracionPerfil.cs</DependentUpon>
     </EmbeddedResource>
@@ -155,6 +176,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModalesCompras\ModalClientes.resx">
+      <DependentUpon>ModalClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModalesCompras\ModalProductos.resx">
+      <DependentUpon>ModalProductos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ModalesProductos\EliminarProducto.resx">
       <DependentUpon>EliminarProducto.cs</DependentUpon>
