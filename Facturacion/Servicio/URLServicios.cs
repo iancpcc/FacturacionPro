@@ -13,9 +13,8 @@ namespace Facturacion.Servicio
         //Productos
         String urlProductos = "http://localhost:8081/ApiRestfulFacturacion/public/api/productos";
         //Proveedores
-        String urlProveedores = "http://localhost:8081/ApiRestfulFacturacion/public/api/proveedores";
-        //Configuración
-        
+        public string urlProveedores = "http://backendfacturacion.herokuapp.com/public/api/proveedores";
+
         //
 
         public string devolverURLProductos()

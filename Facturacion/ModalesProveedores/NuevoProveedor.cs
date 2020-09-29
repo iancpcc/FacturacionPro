@@ -21,7 +21,6 @@ namespace Facturacion.ModalesProveedores
         public NuevoProveedor()
         {
             InitializeComponent();
-            cbEstado.SelectedIndex = -1;
         }
 
         private void TopBar_MouseDown(object sender, MouseEventArgs e)
@@ -57,18 +56,17 @@ namespace Facturacion.ModalesProveedores
         {
             Proveedor p = new Proveedor(
             0,
-            txtNombre.Text,
             txtRUC.Text,
-            txtTelefono.Text,
+            txtNombre.Text,
             txtDireccion.Text,
-            cbEstado.SelectedItem.ToString()
+            txtTelefono.Text
             );
         }
 
         public bool Controles()
         {
             if (txtNombre.Text.Length == 0 || txtRUC.Text.Length == 0 
-                || txtTelefono.Text.Length == 0 || txtDireccion.Text.Length == 0 || cbEstado.SelectedIndex == -1)
+                || txtTelefono.Text.Length == 0 || txtDireccion.Text.Length == 0)
             {
                 MessageBox.Show("Campos Vacíos");
                 return false;

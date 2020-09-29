@@ -40,7 +40,7 @@ namespace Facturacion.ModalesProductos
             
 
 
-            respuesta = metodos.RetornarListado(urlProveedores);
+            respuesta = metodos.retornarListado(urlProveedores);
             JavaScriptSerializer cadena = new JavaScriptSerializer();
             listadoJSON = (List<Proveedor>)cadena.Deserialize(respuesta, typeof(List<Proveedor>));
 

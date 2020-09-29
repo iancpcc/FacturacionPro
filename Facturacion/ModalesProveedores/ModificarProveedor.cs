@@ -47,7 +47,7 @@ namespace Facturacion.ModalesProveedores
         public bool Controles()
         {
             if (txtNombre.Text.Length == 0 || txtRUC.Text.Length == 0
-                || txtTelefono.Text.Length == 0 || txtDireccion.Text.Length == 0 || cbEstado.SelectedIndex == -1)
+                || txtTelefono.Text.Length == 0 || txtDireccion.Text.Length == 0)
             {
                 MessageBox.Show("Campos Vacíos");
 

@@ -9,19 +9,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Facturacion.Metodos;
+using Facturacion.Servicio;
 
 namespace Facturacion
 {
     public partial class Proveedores : Form
     {
+        ClaseMetodos metodos;
+        URLServicios servicios;
+        dynamic listadoProveedores;
         public Proveedores()
         {
             InitializeComponent();
+            metodos = new ClaseMetodos();
+            servicios = new URLServicios();
 
-
+            dynamic data = metodos.obtenerInstancias(servicios.urlProveedores);
             gvProveedores.Rows.Clear();
-            gvProveedores.DataSource = llenarProveedores();
-            
+            gvProveedores.DataSource = llenarProveedores(data.proveedores);
         }
 
         private void btnEditar_Click(object sender, EventArgs e)
@@ -36,16 +42,15 @@ namespace Facturacion
             if (gvProveedores.SelectedRows.Count > 0)
             {
                 fr.txtId.Text = gvProveedores.CurrentRow.Cells[0].Value.ToString();
-                fr.txtNombre.Text = gvProveedores.CurrentRow.Cells[1].Value.ToString();
-                fr.txtRUC.Text = gvProveedores.CurrentRow.Cells[2].Value.ToString();
-                fr.txtTelefono.Text = gvProveedores.CurrentRow.Cells[3].Value.ToString();
-                fr.txtDireccion.Text = gvProveedores.CurrentRow.Cells[4].Value.ToString();
-                fr.cbEstado.Text = gvProveedores.CurrentRow.Cells[5].Value.ToString();
+                fr.txtRUC.Text = gvProveedores.CurrentRow.Cells[1].Value.ToString();
+                fr.txtNombre.Text = gvProveedores.CurrentRow.Cells[2].Value.ToString();
+                fr.txtDireccion.Text = gvProveedores.CurrentRow.Cells[3].Value.ToString();
+                fr.txtTelefono.Text = gvProveedores.CurrentRow.Cells[4].Value.ToString();
                 fr.ShowDialog();
             }
             else
             {
-                MessageBox.Show("Debe seleccionar almenos un dato");
+                MessageBox.Show("Debe seleccionar al menos un dato");
             }
 
         }
@@ -55,16 +60,15 @@ namespace Facturacion
             if (gvProveedores.SelectedRows.Count > 0)
             {
                 fr.txtId.Text = gvProveedores.CurrentRow.Cells[0].Value.ToString();
-                fr.txtNombre.Text = gvProveedores.CurrentRow.Cells[1].Value.ToString();
-                fr.txtRUC.Text = gvProveedores.CurrentRow.Cells[2].Value.ToString();
-                fr.txtTelefono.Text = gvProveedores.CurrentRow.Cells[3].Value.ToString();
-                fr.txtDireccion.Text = gvProveedores.CurrentRow.Cells[4].Value.ToString();
-                fr.txtEstado.Text = gvProveedores.CurrentRow.Cells[5].Value.ToString();
+                fr.txtRUC.Text = gvProveedores.CurrentRow.Cells[1].Value.ToString();
+                fr.txtNombre.Text = gvProveedores.CurrentRow.Cells[2].Value.ToString();
+                fr.txtDireccion.Text = gvProveedores.CurrentRow.Cells[3].Value.ToString();
+                fr.txtTelefono.Text = gvProveedores.CurrentRow.Cells[4].Value.ToString();
                 fr.ShowDialog();
             }
             else
             {
-                MessageBox.Show("Debe seleccionar almenos un dato");
+                MessageBox.Show("Debe seleccionar al menos un dato");
             }
 
         }
@@ -81,15 +85,16 @@ namespace Facturacion
             EliminarDatosModal();
         }
 
-        public List<Proveedor> llenarProveedores()
+        public List<Proveedor> llenarProveedores(dynamic arrayProveedores)
         {
-
-            List<Proveedor> lista = new List<Proveedor>();
-            lista.Add(new Proveedor(1,"Christian","1804898755","0983084104","Ambato","Activo"));
-            lista.Add(new Proveedor(2,"Pedro","1804898755","0983084104","Quito","Activo"));
-            lista.Add(new Proveedor(3,"Alberto","1804898755","0983084104","Guayaquil","Inactivo"));
-            return lista;
+            List<Proveedor> proveedores = new List<Proveedor>();
+            foreach (var proveedor in arrayProveedores)
+            {
+                proveedores.Add(new Proveedor(Convert.ToInt32(proveedor.id),Convert.ToString(proveedor.ruc), Convert.ToString(proveedor.nombre), Convert.ToString(proveedor.direccion), Convert.ToString(proveedor.telefono)));
+            }
+            return proveedores;
         }
+
     }
 
 

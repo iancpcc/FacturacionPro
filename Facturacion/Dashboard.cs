@@ -82,22 +82,22 @@ namespace Facturacion
         {
             if(panelSidebar.Width== 220)
             {
-                panelSidebar.Width =55;
+                btnMenu.Location = new Point(20, 20);
+                panelSidebar.Width = 60;
                 lbMantenimiento.Visible = false;
                 lbMenu.Visible = false;
                 pbProfileMax.Visible = false;
                 pbProfileMin.Visible = true;
-                lbPerfil.Visible = false;
-               
+                lbPerfil.Visible = false;  
             }
             else{
+                btnMenu.Location = new Point(190, 10);
                 panelSidebar.Width = 220;
                 lbMantenimiento.Visible = true;
                 lbMenu.Visible = true;
                 pbProfileMax.Visible = true;
                 pbProfileMin.Visible = false;
                 lbPerfil.Visible = true;
-                
             }
         }
         
@@ -117,7 +117,6 @@ namespace Facturacion
                 iconBtnSmCompras.Visible = false;
                 iconBtnSmComprasRight.Visible = true;
                 iconBtnSmComprasRight.Location = new Point(158,396);
-
             }
             else
             {
@@ -125,9 +124,6 @@ namespace Facturacion
                 btnProductos.Location = new Point(2, 518);
                 iconBtnSmCompras.Visible = true;
                 iconBtnSmComprasRight.Visible = false;
-
-               
-
             }
         }
 

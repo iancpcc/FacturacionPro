@@ -41,12 +41,13 @@ namespace Facturacion
       
 
         public void cargarListadoProductos() {
+
             List<Producto> listadoJSON = new List<Producto>();
             List<Producto> listadoRecuperado = new List<Producto>();
             List<ProductoVista> listadoProductosVista = new List<ProductoVista>();
 
 
-            respuesta =metodos.RetornarListado(urlProductos);
+            respuesta =metodos.retornarListado(urlProductos);
             JavaScriptSerializer cadena = new JavaScriptSerializer();
             listadoJSON = (List<Producto>)cadena.Deserialize(respuesta, typeof(List<Producto>));
                 

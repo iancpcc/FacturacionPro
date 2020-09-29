@@ -44,6 +44,9 @@ namespace Facturacion.ModalesProveedores
 
         }
 
-        
+        private void btnGurdar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

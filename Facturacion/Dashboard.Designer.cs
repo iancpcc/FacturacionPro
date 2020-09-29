@@ -75,7 +75,6 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(87)))), ((int)(((byte)(155)))));
-            this.panel1.Controls.Add(this.btnMenu);
             this.panel1.Controls.Add(this.btnMinize);
             this.panel1.Controls.Add(this.btnNormal);
             this.panel1.Controls.Add(this.bntMaximize);
@@ -95,14 +94,15 @@
             this.btnMenu.BackColor = System.Drawing.Color.Transparent;
             this.btnMenu.BackgroundImage = global::Facturacion.Properties.Resources.hamburger;
             this.btnMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnMenu.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMenu.FlatAppearance.BorderSize = 0;
             this.btnMenu.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnMenu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMenu.Location = new System.Drawing.Point(220, 8);
+            this.btnMenu.Location = new System.Drawing.Point(190, 10);
             this.btnMenu.Margin = new System.Windows.Forms.Padding(2);
             this.btnMenu.Name = "btnMenu";
-            this.btnMenu.Size = new System.Drawing.Size(24, 27);
+            this.btnMenu.Size = new System.Drawing.Size(24, 30);
             this.btnMenu.TabIndex = 3;
             this.btnMenu.UseVisualStyleBackColor = false;
             this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
@@ -194,6 +194,7 @@
             // panelSidebar
             // 
             this.panelSidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.panelSidebar.Controls.Add(this.btnMenu);
             this.panelSidebar.Controls.Add(this.SubmenuCompras);
             this.panelSidebar.Controls.Add(this.iconBtnSmComprasRight);
             this.panelSidebar.Controls.Add(this.iconBtnSmCompras);
@@ -212,7 +213,7 @@
             this.panelSidebar.Location = new System.Drawing.Point(0, 41);
             this.panelSidebar.Margin = new System.Windows.Forms.Padding(2);
             this.panelSidebar.Name = "panelSidebar";
-            this.panelSidebar.Size = new System.Drawing.Size(220, 879);
+            this.panelSidebar.Size = new System.Drawing.Size(220, 747);
             this.panelSidebar.TabIndex = 3;
             // 
             // SubmenuCompras
@@ -432,7 +433,7 @@
             this.iconButton5.IconColor = System.Drawing.Color.White;
             this.iconButton5.IconSize = 30;
             this.iconButton5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton5.Location = new System.Drawing.Point(2, 829);
+            this.iconButton5.Location = new System.Drawing.Point(2, 697);
             this.iconButton5.Margin = new System.Windows.Forms.Padding(2);
             this.iconButton5.Name = "iconButton5";
             this.iconButton5.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
@@ -578,7 +579,7 @@
             this.panelPrincipal.Location = new System.Drawing.Point(220, 82);
             this.panelPrincipal.Margin = new System.Windows.Forms.Padding(2);
             this.panelPrincipal.Name = "panelPrincipal";
-            this.panelPrincipal.Size = new System.Drawing.Size(1130, 838);
+            this.panelPrincipal.Size = new System.Drawing.Size(1130, 706);
             this.panelPrincipal.TabIndex = 5;
             this.panelPrincipal.Paint += new System.Windows.Forms.PaintEventHandler(this.panelPrincipal_Paint);
             // 
@@ -587,7 +588,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1350, 920);
+            this.ClientSize = new System.Drawing.Size(1350, 788);
             this.Controls.Add(this.panelPrincipal);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panelSidebar);
