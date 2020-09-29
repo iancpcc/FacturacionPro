@@ -23,16 +23,9 @@ namespace Facturacion.Metodos
 
         }
 
-        public List<Object> llenarGridView(string url)
-        {
-            
-            List<Object> lista = new List<Object>();
-            string respuesta = retornarListado(url);
-            Console.Write(respuesta);
-            return lista;
-        }
-
-        public dynamic obtenerInstancias(string url)
+        //Petición GET sin parámetros
+        //Retorna un array con los items 
+        public dynamic getItems(string url)
         {
             var request = (HttpWebRequest)WebRequest.Create(url);
             request.Method = "GET";
@@ -42,11 +35,8 @@ namespace Facturacion.Metodos
             {
                 using (WebResponse response = request.GetResponse())
                 {
-                    
                     using (Stream strReader = response.GetResponseStream())
                     {
-                        if (strReader == null) return null;
-
                         using (StreamReader objReader = new StreamReader(strReader))
                         {
                             //Convierte a string la Respuesta
@@ -55,12 +45,13 @@ namespace Facturacion.Metodos
                             dynamic dynamicBody = JObject.Parse(stringBody);
                             if(dynamicBody.status == "ok") 
                             {
+                                //Retorn el array de datos
                                 return dynamicBody.data;
                             }
                             else 
                             {
                                 //Mensaje de error en el lado de Servidor
-                                MessageBox.Show("Código: "+dynamicBody.code+".\nMensaje: "+dynamicBody.message+".");
+                                MessageBox.Show("Código: "+dynamicBody.code+".\nMensaje: "+dynamicBody.message+".", "Error con el Servidor", MessageBoxButtons.OK, MessageBoxIcon.Error);
                                 return null;
                             }
                         }
@@ -69,34 +60,36 @@ namespace Facturacion.Metodos
             }
             catch (WebException ex)
             {
-                if (ex.Status == WebExceptionStatus.ProtocolError && ex.Response != null)
-                {
-                    var resp = (HttpWebResponse)ex.Response;
-                    if (resp.StatusCode == HttpStatusCode.NotFound)
-                    {
-                        MessageBox.Show("Error: 500 \nMensaje: No se puede establecer conexión con el Servidor", "Error con el Servidor", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        return null;
-                    }
-                    else
-                    {
-                        Stream strReader = ex.Response.GetResponseStream();
-                        StreamReader objReader = new StreamReader(strReader);
-                        string stringBody = objReader.ReadToEnd();
-
-                        dynamic dynamicBody = JObject.Parse(stringBody);
-
-                        MessageBox.Show("Error: " + dynamicBody.code + "\nMensaje: " + dynamicBody.message + ".", "Error con el Servidor", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        return null;
-                    }
-                }
-                else
-                {
-                    MessageBox.Show("Mensaje: Error con el Host", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return null;
-                }
+                return MostrarError(ex);
             }
         }
 
+        private dynamic MostrarError(WebException ex)
+        {
+            if (ex.Status == WebExceptionStatus.ProtocolError && ex.Response != null)
+            {
+                var resp = (HttpWebResponse)ex.Response;
+                if (resp.StatusCode == HttpStatusCode.NotFound)
+                {
+                    MessageBox.Show("Error: 500 \nMensaje: No se puede establecer conexión con el Servidor", "Error con el Servidor", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return null;
+                }
+                else
+                {
+                    Stream strReader = ex.Response.GetResponseStream();
+                    StreamReader objReader = new StreamReader(strReader);
+                    string stringBody = objReader.ReadToEnd();
+                    dynamic dynamicBody = JObject.Parse(stringBody);
+                    MessageBox.Show("Error: " + dynamicBody.code + "\nMensaje: " + dynamicBody.message + ".", "Error con el Servidor", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return null;
+                }
+            }
+            else
+            {
+                MessageBox.Show("Mensaje: Error con el Host", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return null;
+            }
+        }
         public string devolverEstado(int estadoRecuperado)
         {
             String estado = "";

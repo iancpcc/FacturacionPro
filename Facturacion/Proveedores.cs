@@ -25,7 +25,7 @@ namespace Facturacion
             metodos = new ClaseMetodos();
             servicios = new URLServicios();
 
-            dynamic data = metodos.obtenerInstancias(servicios.urlProveedores);
+            dynamic data = metodos.getItems(servicios.urlProveedores);
             gvProveedores.Rows.Clear();
             gvProveedores.DataSource = llenarProveedores(data.proveedores);
         }
