@@ -1,12 +1,17 @@
-﻿using Newtonsoft.Json.Linq;
+﻿using Facturacion.Entidades;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net;
+using System.Net.Http;
+using System.Runtime.Serialization.Json;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.Script.Serialization;
 using System.Windows.Forms;
 
 namespace Facturacion.Metodos
@@ -25,43 +30,100 @@ namespace Facturacion.Metodos
 
         //Petición GET sin parámetros
         //Retorna un array con los items 
-        public dynamic getItems(string url)
+        public dynamic getRequest(string url)
         {
             var request = (HttpWebRequest)WebRequest.Create(url);
             request.Method = "GET";
             request.ContentType = "application/json";
-            request.Accept = "application/json";
+            request.Accept = "application/json; charset=utf-8";
+                        //request.Accept = "application/json";
             try
             {
-                using (WebResponse response = request.GetResponse())
+                using (var response = request.GetResponse())
+                using (var reader = new StreamReader(response.GetResponseStream()))
                 {
-                    using (Stream strReader = response.GetResponseStream())
+                    var result = reader.ReadToEnd();
+
+                    if (string.IsNullOrEmpty(result))
                     {
-                        using (StreamReader objReader = new StreamReader(strReader))
-                        {
-                            //Convierte a string la Respuesta
-                            string stringBody = objReader.ReadToEnd();
-                            //Permite acceder a los atributos del string
-                            dynamic dynamicBody = JObject.Parse(stringBody);
-                            if(dynamicBody.status == "ok") 
-                            {
-                                //Retorn el array de datos
-                                return dynamicBody.data;
-                            }
-                            else 
-                            {
-                                //Mensaje de error en el lado de Servidor
-                                MessageBox.Show("Código: "+dynamicBody.code+".\nMensaje: "+dynamicBody.message+".", "Error con el Servidor", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                                return null;
-                            }
-                        }
+                        return null;
                     }
+
+                    dynamic dynamicBody = JObject.Parse(result);
+                  
+                    if (dynamicBody.status == "ok")
+                    {    //Retorn el array de datos
+                      
+                        return dynamicBody.data;
+                    }
+                    else
+                    {
+                        //Mensaje de error en el lado de Servidor
+                        MessageBox.Show("Código: " + dynamicBody.code + ".\nMensaje: " + dynamicBody.message + ".", "Error con el Servidor", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return null;
+                    }
+
+
+
                 }
             }
             catch (WebException ex)
             {
                 return MostrarError(ex);
             }
+        }
+
+        public dynamic sendRequest(string url,Object user)
+        {
+         
+                var httpWebRequest = (HttpWebRequest)WebRequest.Create(url);
+                httpWebRequest.ContentType = "application/json; charset=utf-8";
+                httpWebRequest.Method = "POST";
+                httpWebRequest.Accept = "application/json; charset=utf-8";
+            try
+            {
+                using (var streamWriter = new StreamWriter(httpWebRequest.GetRequestStream()))
+                {
+                    string loginjson = new JavaScriptSerializer().Serialize(user);
+
+                    streamWriter.Write(loginjson);
+                    streamWriter.Flush();
+                    streamWriter.Close();
+
+                    var httpResponse = (HttpWebResponse)httpWebRequest.GetResponse();
+                    using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
+                    {
+                        var result = streamReader.ReadToEnd();
+                        if (string.IsNullOrEmpty(result))
+                        {
+                            return null;
+                        }
+
+                        dynamic dynamicBody = JObject.Parse(result);
+
+                        if (dynamicBody.status == "ok")
+                        {    //Retorn el array de datos
+
+                            return dynamicBody.data;
+                        }
+                        
+                        else
+                        {
+                            //Mensaje de error en el lado de Servidor
+                            MessageBox.Show("Código: " + dynamicBody.code + ".\nMensaje: " + dynamicBody.message + ".", "Error con el Servidor", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            return null;
+                        }
+                    }
+                }
+
+
+    }
+            catch (WebException ex)
+            {
+                MostrarError(ex);
+                return null;
+            }
+
         }
 
         private dynamic MostrarError(WebException ex)

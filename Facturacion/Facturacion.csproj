@@ -89,6 +89,7 @@
     </Compile>
     <Compile Include="Entidades\Producto.cs" />
     <Compile Include="Entidades\Proveedor.cs" />
+    <Compile Include="Entidades\Usuario.cs" />
     <Compile Include="Metodos\ClaseMetodos.cs" />
     <Compile Include="ModalesCompras\ModalClientes.cs">
       <SubType>Form</SubType>
@@ -164,6 +165,9 @@
     <Compile Include="Proveedores.Designer.cs">
       <DependentUpon>Proveedores.cs</DependentUpon>
     </Compile>
+    <Compile Include="Servicio\Login\LoginService.cs" />
+    <Compile Include="Servicio\Productos\ProductosServicios.cs" />
+    <Compile Include="Servicio\Proveedores\ProveedoresServicios.cs" />
     <Compile Include="Servicio\URLServicios.cs" />
     <EmbeddedResource Include="Compras.resx">
       <DependentUpon>Compras.cs</DependentUpon>
@@ -275,6 +279,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\window_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\collage_xmlinvesoft.png" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

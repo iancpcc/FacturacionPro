@@ -63,6 +63,16 @@ namespace Facturacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _lock {
+            get {
+                object obj = ResourceManager.GetObject("_lock", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bagofmoney_5108 {
             get {
                 object obj = ResourceManager.GetObject("bagofmoney_5108", resourceCulture);
@@ -86,6 +96,16 @@ namespace Facturacion.Properties {
         internal static System.Drawing.Bitmap close {
             get {
                 object obj = ResourceManager.GetObject("close", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap collage_xmlinvesoft {
+            get {
+                object obj = ResourceManager.GetObject("collage_xmlinvesoft", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

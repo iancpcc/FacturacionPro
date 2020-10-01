@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnMenu = new System.Windows.Forms.Button();
             this.btnMinize = new System.Windows.Forms.PictureBox();
             this.btnNormal = new System.Windows.Forms.PictureBox();
             this.bntMaximize = new System.Windows.Forms.PictureBox();
             this.btnclose = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnMenu = new System.Windows.Forms.Button();
             this.panelSidebar = new System.Windows.Forms.Panel();
             this.SubmenuCompras = new System.Windows.Forms.Panel();
             this.iconButton4 = new FontAwesome.Sharp.IconButton();
@@ -51,7 +51,7 @@
             this.lbMantenimiento = new System.Windows.Forms.Label();
             this.pbProfileMax = new System.Windows.Forms.PictureBox();
             this.iconButton5 = new FontAwesome.Sharp.IconButton();
-            this.btnCompras = new FontAwesome.Sharp.IconButton();
+            this.bntCompras = new FontAwesome.Sharp.IconButton();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.btnConfiguracion = new FontAwesome.Sharp.IconButton();
             this.btnPrincipal = new FontAwesome.Sharp.IconButton();
@@ -88,24 +88,6 @@
             this.panel1.Size = new System.Drawing.Size(1350, 41);
             this.panel1.TabIndex = 2;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
-            // 
-            // btnMenu
-            // 
-            this.btnMenu.BackColor = System.Drawing.Color.Transparent;
-            this.btnMenu.BackgroundImage = global::Facturacion.Properties.Resources.hamburger;
-            this.btnMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnMenu.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMenu.FlatAppearance.BorderSize = 0;
-            this.btnMenu.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnMenu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMenu.Location = new System.Drawing.Point(190, 10);
-            this.btnMenu.Margin = new System.Windows.Forms.Padding(2);
-            this.btnMenu.Name = "btnMenu";
-            this.btnMenu.Size = new System.Drawing.Size(24, 30);
-            this.btnMenu.TabIndex = 3;
-            this.btnMenu.UseVisualStyleBackColor = false;
-            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
             // 
             // btnMinize
             // 
@@ -182,18 +164,36 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Ebrima", 14F);
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(19, 7);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(133, 25);
+            this.label1.Size = new System.Drawing.Size(134, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "ADMIN PANEL";
             // 
+            // btnMenu
+            // 
+            this.btnMenu.BackColor = System.Drawing.Color.Transparent;
+            this.btnMenu.BackgroundImage = global::Facturacion.Properties.Resources.hamburger;
+            this.btnMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnMenu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMenu.FlatAppearance.BorderSize = 0;
+            this.btnMenu.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnMenu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMenu.Location = new System.Drawing.Point(200, 4);
+            this.btnMenu.Margin = new System.Windows.Forms.Padding(2);
+            this.btnMenu.Name = "btnMenu";
+            this.btnMenu.Size = new System.Drawing.Size(24, 30);
+            this.btnMenu.TabIndex = 3;
+            this.btnMenu.UseVisualStyleBackColor = false;
+            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
+            // 
             // panelSidebar
             // 
-            this.panelSidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.panelSidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(61)))), ((int)(((byte)(98)))));
             this.panelSidebar.Controls.Add(this.btnMenu);
             this.panelSidebar.Controls.Add(this.SubmenuCompras);
             this.panelSidebar.Controls.Add(this.iconBtnSmComprasRight);
@@ -205,7 +205,7 @@
             this.panelSidebar.Controls.Add(this.panel5);
             this.panelSidebar.Controls.Add(this.pbProfileMax);
             this.panelSidebar.Controls.Add(this.iconButton5);
-            this.panelSidebar.Controls.Add(this.btnCompras);
+            this.panelSidebar.Controls.Add(this.bntCompras);
             this.panelSidebar.Controls.Add(this.iconButton2);
             this.panelSidebar.Controls.Add(this.btnConfiguracion);
             this.panelSidebar.Controls.Add(this.btnPrincipal);
@@ -213,12 +213,12 @@
             this.panelSidebar.Location = new System.Drawing.Point(0, 41);
             this.panelSidebar.Margin = new System.Windows.Forms.Padding(2);
             this.panelSidebar.Name = "panelSidebar";
-            this.panelSidebar.Size = new System.Drawing.Size(220, 747);
+            this.panelSidebar.Size = new System.Drawing.Size(230, 747);
             this.panelSidebar.TabIndex = 3;
             // 
             // SubmenuCompras
             // 
-            this.SubmenuCompras.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.SubmenuCompras.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(61)))), ((int)(((byte)(98)))));
             this.SubmenuCompras.Controls.Add(this.iconButton4);
             this.SubmenuCompras.Controls.Add(this.iconButtonSmProveedores);
             this.SubmenuCompras.Location = new System.Drawing.Point(44, 438);
@@ -282,7 +282,7 @@
             // 
             // iconBtnSmComprasRight
             // 
-            this.iconBtnSmComprasRight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.iconBtnSmComprasRight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(61)))), ((int)(((byte)(98)))));
             this.iconBtnSmComprasRight.FlatAppearance.BorderSize = 0;
             this.iconBtnSmComprasRight.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
             this.iconBtnSmComprasRight.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(89)))), ((int)(((byte)(110)))));
@@ -291,18 +291,18 @@
             this.iconBtnSmComprasRight.IconChar = FontAwesome.Sharp.IconChar.AngleRight;
             this.iconBtnSmComprasRight.IconColor = System.Drawing.Color.White;
             this.iconBtnSmComprasRight.IconSize = 25;
-            this.iconBtnSmComprasRight.Location = new System.Drawing.Point(133, 398);
+            this.iconBtnSmComprasRight.Location = new System.Drawing.Point(156, 397);
             this.iconBtnSmComprasRight.Margin = new System.Windows.Forms.Padding(2);
             this.iconBtnSmComprasRight.Name = "iconBtnSmComprasRight";
             this.iconBtnSmComprasRight.Rotation = 0D;
-            this.iconBtnSmComprasRight.Size = new System.Drawing.Size(21, 36);
-            this.iconBtnSmComprasRight.TabIndex = 6;
+            this.iconBtnSmComprasRight.Size = new System.Drawing.Size(28, 36);
+            this.iconBtnSmComprasRight.TabIndex = 0;
             this.iconBtnSmComprasRight.UseVisualStyleBackColor = false;
             this.iconBtnSmComprasRight.Click += new System.EventHandler(this.iconBtnSmComprasRight_Click);
             // 
             // iconBtnSmCompras
             // 
-            this.iconBtnSmCompras.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.iconBtnSmCompras.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(61)))), ((int)(((byte)(98)))));
             this.iconBtnSmCompras.FlatAppearance.BorderSize = 0;
             this.iconBtnSmCompras.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
             this.iconBtnSmCompras.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(89)))), ((int)(((byte)(110)))));
@@ -311,16 +311,15 @@
             this.iconBtnSmCompras.IconChar = FontAwesome.Sharp.IconChar.AngleDown;
             this.iconBtnSmCompras.IconColor = System.Drawing.Color.White;
             this.iconBtnSmCompras.IconSize = 25;
-            this.iconBtnSmCompras.Location = new System.Drawing.Point(158, 396);
+            this.iconBtnSmCompras.Location = new System.Drawing.Point(188, 397);
             this.iconBtnSmCompras.Margin = new System.Windows.Forms.Padding(2);
             this.iconBtnSmCompras.Name = "iconBtnSmCompras";
             this.iconBtnSmCompras.Rotation = 0D;
-            this.iconBtnSmCompras.Size = new System.Drawing.Size(21, 36);
+            this.iconBtnSmCompras.Size = new System.Drawing.Size(28, 36);
             this.iconBtnSmCompras.TabIndex = 0;
             this.iconBtnSmCompras.UseVisualStyleBackColor = false;
             this.iconBtnSmCompras.Visible = false;
-            this.iconBtnSmCompras.Click += new System.EventHandler(this.iconBtnSmCompras_Click_1);
-            this.iconBtnSmCompras.MouseHover += new System.EventHandler(this.iconBtnSmCompras_MouseHover);
+            this.iconBtnSmCompras.Click += new System.EventHandler(this.iconBtnSmCompras_Click);
             // 
             // btnProductos
             // 
@@ -328,7 +327,7 @@
             this.btnProductos.FlatAppearance.BorderSize = 0;
             this.btnProductos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnProductos.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.btnProductos.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProductos.Font = new System.Drawing.Font("Ebrima", 14F);
             this.btnProductos.ForeColor = System.Drawing.Color.White;
             this.btnProductos.IconChar = FontAwesome.Sharp.IconChar.Boxes;
             this.btnProductos.IconColor = System.Drawing.Color.White;
@@ -340,9 +339,9 @@
             this.btnProductos.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
             this.btnProductos.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btnProductos.Rotation = 0D;
-            this.btnProductos.Size = new System.Drawing.Size(179, 41);
+            this.btnProductos.Size = new System.Drawing.Size(211, 41);
             this.btnProductos.TabIndex = 0;
-            this.btnProductos.Text = "   Productos";
+            this.btnProductos.Text = "  Productos";
             this.btnProductos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnProductos.UseVisualStyleBackColor = true;
             this.btnProductos.Click += new System.EventHandler(this.btnProductos_Click);
@@ -350,7 +349,7 @@
             // pbProfileMin
             // 
             this.pbProfileMin.Image = global::Facturacion.Properties.Resources.user;
-            this.pbProfileMin.Location = new System.Drawing.Point(16, 95);
+            this.pbProfileMin.Location = new System.Drawing.Point(18, 95);
             this.pbProfileMin.Margin = new System.Windows.Forms.Padding(2);
             this.pbProfileMin.Name = "pbProfileMin";
             this.pbProfileMin.Size = new System.Drawing.Size(34, 36);
@@ -362,11 +361,12 @@
             // lbPerfil
             // 
             this.lbPerfil.AutoSize = true;
+            this.lbPerfil.Font = new System.Drawing.Font("Ebrima", 14F);
             this.lbPerfil.ForeColor = System.Drawing.Color.White;
-            this.lbPerfil.Location = new System.Drawing.Point(68, 150);
+            this.lbPerfil.Location = new System.Drawing.Point(39, 138);
             this.lbPerfil.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbPerfil.Name = "lbPerfil";
-            this.lbPerfil.Size = new System.Drawing.Size(70, 13);
+            this.lbPerfil.Size = new System.Drawing.Size(132, 25);
             this.lbPerfil.TabIndex = 3;
             this.lbPerfil.Text = "Administrador";
             // 
@@ -423,7 +423,7 @@
             // 
             // iconButton5
             // 
-            this.iconButton5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.iconButton5.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.iconButton5.FlatAppearance.BorderSize = 0;
             this.iconButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButton5.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
@@ -433,47 +433,43 @@
             this.iconButton5.IconColor = System.Drawing.Color.White;
             this.iconButton5.IconSize = 30;
             this.iconButton5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton5.Location = new System.Drawing.Point(2, 697);
+            this.iconButton5.Location = new System.Drawing.Point(0, 699);
             this.iconButton5.Margin = new System.Windows.Forms.Padding(2);
             this.iconButton5.Name = "iconButton5";
             this.iconButton5.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
             this.iconButton5.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.iconButton5.Rotation = 0D;
-            this.iconButton5.Size = new System.Drawing.Size(180, 41);
+            this.iconButton5.Size = new System.Drawing.Size(230, 48);
             this.iconButton5.TabIndex = 0;
             this.iconButton5.Text = "   SALIR";
             this.iconButton5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton5.UseVisualStyleBackColor = true;
             this.iconButton5.Click += new System.EventHandler(this.iconButton5_Click);
             // 
-            // btnCompras
+            // bntCompras
             // 
-            this.btnCompras.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCompras.FlatAppearance.BorderSize = 0;
-            this.btnCompras.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
-            this.btnCompras.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(89)))), ((int)(((byte)(110)))));
-            this.btnCompras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCompras.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.btnCompras.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCompras.ForeColor = System.Drawing.Color.White;
-            this.btnCompras.IconChar = FontAwesome.Sharp.IconChar.Truck;
-            this.btnCompras.IconColor = System.Drawing.Color.White;
-            this.btnCompras.IconSize = 30;
-            this.btnCompras.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCompras.Location = new System.Drawing.Point(2, 392);
-            this.btnCompras.Margin = new System.Windows.Forms.Padding(2);
-            this.btnCompras.Name = "btnCompras";
-            this.btnCompras.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
-            this.btnCompras.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnCompras.Rotation = 0D;
-            this.btnCompras.Size = new System.Drawing.Size(152, 41);
-            this.btnCompras.TabIndex = 0;
-            this.btnCompras.Text = "   Compras";
-            this.btnCompras.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnCompras.UseVisualStyleBackColor = true;
-            this.btnCompras.Click += new System.EventHandler(this.btnCompras_Click);
-            this.btnCompras.MouseLeave += new System.EventHandler(this.btnCompras_MouseLeave);
-            this.btnCompras.MouseHover += new System.EventHandler(this.btnCompras_MouseHover);
+            this.bntCompras.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bntCompras.FlatAppearance.BorderSize = 0;
+            this.bntCompras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bntCompras.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.bntCompras.Font = new System.Drawing.Font("Ebrima", 14F);
+            this.bntCompras.ForeColor = System.Drawing.Color.White;
+            this.bntCompras.IconChar = FontAwesome.Sharp.IconChar.Truck;
+            this.bntCompras.IconColor = System.Drawing.Color.White;
+            this.bntCompras.IconSize = 30;
+            this.bntCompras.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bntCompras.Location = new System.Drawing.Point(1, 392);
+            this.bntCompras.Margin = new System.Windows.Forms.Padding(2);
+            this.bntCompras.Name = "bntCompras";
+            this.bntCompras.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.bntCompras.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bntCompras.Rotation = 0D;
+            this.bntCompras.Size = new System.Drawing.Size(170, 41);
+            this.bntCompras.TabIndex = 0;
+            this.bntCompras.Text = "  Compras";
+            this.bntCompras.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.bntCompras.UseVisualStyleBackColor = true;
+            this.bntCompras.Click += new System.EventHandler(this.bntCompras_Click);
             // 
             // iconButton2
             // 
@@ -481,7 +477,7 @@
             this.iconButton2.FlatAppearance.BorderSize = 0;
             this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButton2.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.iconButton2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton2.Font = new System.Drawing.Font("Ebrima", 14F);
             this.iconButton2.ForeColor = System.Drawing.Color.White;
             this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.UserTie;
             this.iconButton2.IconColor = System.Drawing.Color.White;
@@ -493,9 +489,9 @@
             this.iconButton2.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
             this.iconButton2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.iconButton2.Rotation = 0D;
-            this.iconButton2.Size = new System.Drawing.Size(175, 41);
+            this.iconButton2.Size = new System.Drawing.Size(207, 41);
             this.iconButton2.TabIndex = 0;
-            this.iconButton2.Text = "   Empleados";
+            this.iconButton2.Text = "  Empleados";
             this.iconButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton2.UseVisualStyleBackColor = true;
             // 
@@ -505,7 +501,7 @@
             this.btnConfiguracion.FlatAppearance.BorderSize = 0;
             this.btnConfiguracion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConfiguracion.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.btnConfiguracion.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConfiguracion.Font = new System.Drawing.Font("Ebrima", 14F);
             this.btnConfiguracion.ForeColor = System.Drawing.Color.White;
             this.btnConfiguracion.IconChar = FontAwesome.Sharp.IconChar.UserCog;
             this.btnConfiguracion.IconColor = System.Drawing.Color.White;
@@ -517,9 +513,9 @@
             this.btnConfiguracion.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
             this.btnConfiguracion.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btnConfiguracion.Rotation = 0D;
-            this.btnConfiguracion.Size = new System.Drawing.Size(180, 41);
+            this.btnConfiguracion.Size = new System.Drawing.Size(212, 41);
             this.btnConfiguracion.TabIndex = 0;
-            this.btnConfiguracion.Text = "   Configuración";
+            this.btnConfiguracion.Text = "  Configuración";
             this.btnConfiguracion.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnConfiguracion.UseVisualStyleBackColor = true;
             this.btnConfiguracion.Click += new System.EventHandler(this.btnConfiguracion_Click);
@@ -530,7 +526,7 @@
             this.btnPrincipal.FlatAppearance.BorderSize = 0;
             this.btnPrincipal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPrincipal.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.btnPrincipal.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrincipal.Font = new System.Drawing.Font("Ebrima", 14F);
             this.btnPrincipal.ForeColor = System.Drawing.Color.White;
             this.btnPrincipal.IconChar = FontAwesome.Sharp.IconChar.Home;
             this.btnPrincipal.IconColor = System.Drawing.Color.White;
@@ -542,9 +538,9 @@
             this.btnPrincipal.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
             this.btnPrincipal.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btnPrincipal.Rotation = 0D;
-            this.btnPrincipal.Size = new System.Drawing.Size(180, 41);
+            this.btnPrincipal.Size = new System.Drawing.Size(212, 41);
             this.btnPrincipal.TabIndex = 0;
-            this.btnPrincipal.Text = "   Principal";
+            this.btnPrincipal.Text = "  Principal";
             this.btnPrincipal.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnPrincipal.UseVisualStyleBackColor = true;
             this.btnPrincipal.Click += new System.EventHandler(this.btnPrincipal_Click);
@@ -554,10 +550,10 @@
             this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.Controls.Add(this.lblFormulario);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(220, 41);
+            this.panel3.Location = new System.Drawing.Point(230, 41);
             this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1130, 41);
+            this.panel3.Size = new System.Drawing.Size(1120, 41);
             this.panel3.TabIndex = 4;
             // 
             // lblFormulario
@@ -576,10 +572,10 @@
             // 
             this.panelPrincipal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
             this.panelPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelPrincipal.Location = new System.Drawing.Point(220, 82);
+            this.panelPrincipal.Location = new System.Drawing.Point(230, 82);
             this.panelPrincipal.Margin = new System.Windows.Forms.Padding(2);
             this.panelPrincipal.Name = "panelPrincipal";
-            this.panelPrincipal.Size = new System.Drawing.Size(1130, 706);
+            this.panelPrincipal.Size = new System.Drawing.Size(1120, 706);
             this.panelPrincipal.TabIndex = 5;
             this.panelPrincipal.Paint += new System.Windows.Forms.PaintEventHandler(this.panelPrincipal_Paint);
             // 
@@ -632,7 +628,6 @@
         private System.Windows.Forms.PictureBox pbProfileMax;
         private FontAwesome.Sharp.IconButton iconButton5;
         private FontAwesome.Sharp.IconButton btnProductos;
-        private FontAwesome.Sharp.IconButton btnCompras;
         private FontAwesome.Sharp.IconButton iconButton2;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label lbMantenimiento;
@@ -652,6 +647,7 @@
         private FontAwesome.Sharp.IconButton iconButton4;
         private FontAwesome.Sharp.IconButton iconBtnSmCompras;
         private FontAwesome.Sharp.IconButton iconBtnSmComprasRight;
+        private FontAwesome.Sharp.IconButton bntCompras;
     }
 }
 

@@ -11,7 +11,7 @@ namespace Facturacion.Entidades
         public int Id { get; set; }
         public string Nombre { get; set; }
         public string Codigo { get; set; }
-        public float Precio { get; set; }
+        public double Precio { get; set; }
         public int Stock { get; set; }
         public int Estado { get; set; }
         public int IdProveedor { get; set; }

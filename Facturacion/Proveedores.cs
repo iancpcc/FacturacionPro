@@ -11,23 +11,20 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Facturacion.Metodos;
 using Facturacion.Servicio;
+using Facturacion.Servicio.Proveedores;
 
 namespace Facturacion
 {
     public partial class Proveedores : Form
     {
-        ClaseMetodos metodos;
-        URLServicios servicios;
-        dynamic listadoProveedores;
+        ProveedoresServicios servicios= new ProveedoresServicios();
         public Proveedores()
         {
             InitializeComponent();
-            metodos = new ClaseMetodos();
-            servicios = new URLServicios();
 
-            dynamic data = metodos.getItems(servicios.urlProveedores);
+
             gvProveedores.Rows.Clear();
-            gvProveedores.DataSource = llenarProveedores(data.proveedores);
+            gvProveedores.DataSource = this.servicios.ListadoProveedores();
         }
 
         private void btnEditar_Click(object sender, EventArgs e)
@@ -85,16 +82,7 @@ namespace Facturacion
             EliminarDatosModal();
         }
 
-        public List<Proveedor> llenarProveedores(dynamic arrayProveedores)
-        {
-            List<Proveedor> proveedores = new List<Proveedor>();
-            foreach (var proveedor in arrayProveedores)
-            {
-                proveedores.Add(new Proveedor(Convert.ToInt32(proveedor.id),Convert.ToString(proveedor.ruc), Convert.ToString(proveedor.nombre), Convert.ToString(proveedor.direccion), Convert.ToString(proveedor.telefono)));
-            }
-            return proveedores;
-        }
-
+       
     }
 
 

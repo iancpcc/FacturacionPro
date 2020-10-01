@@ -13,23 +13,20 @@ using System.Windows.Forms;
 using System.Web.Script.Serialization;
 using System.Net;
 using System.IO;
+using Facturacion.Servicio.Productos;
 
 namespace Facturacion.ModalesProductos
 {
     public partial class NuevoProducto : Form
     {
-        URLServicios servicios;
-        ClaseMetodos metodos;
+        ClaseMetodos metodos = new ClaseMetodos();
+        ProductosServicios servicios = new ProductosServicios();
         string respuesta;
         string urlProductos, urlProveedores;
 
         public NuevoProducto()
         {
             InitializeComponent();
-            metodos = new ClaseMetodos();
-            servicios = new URLServicios();
-            urlProductos = servicios.devolverURLProductos();
-            urlProveedores = servicios.devolverURLProveedores();
             cargarProveedores();
         }
 

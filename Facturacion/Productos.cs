@@ -14,76 +14,26 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Web.Script.Serialization;
 using System.Windows.Forms;
-
+using Facturacion.Servicio.Productos;
 
 namespace Facturacion
 {
     public partial class Productos : Form
     {
-        
-        string respuesta;
-        ClaseMetodos metodos;
-        URLServicios servicios;
-        string urlProductos,urlProveedores;
 
+        ProductosServicios servicios = new ProductosServicios();
 
         public Productos()
         {
             InitializeComponent();
-            metodos = new ClaseMetodos();
-            servicios = new URLServicios();
-            urlProductos = servicios.devolverURLProductos();
-            urlProveedores = servicios.devolverURLProveedores();
             cargarListadoProductos();
-
-
         }
       
 
         public void cargarListadoProductos() {
 
-            List<Producto> listadoJSON = new List<Producto>();
-            List<Producto> listadoRecuperado = new List<Producto>();
-            List<ProductoVista> listadoProductosVista = new List<ProductoVista>();
-
-
-            respuesta =metodos.retornarListado(urlProductos);
-            JavaScriptSerializer cadena = new JavaScriptSerializer();
-            listadoJSON = (List<Producto>)cadena.Deserialize(respuesta, typeof(List<Producto>));
-                
-            foreach (var item in listadoJSON)
-            {
-                    
-            Producto nuevo = new Producto();
-            nuevo.Id = item.Id;
-            nuevo.Codigo = item.Codigo;
-            nuevo.Nombre = item.Nombre;
-            nuevo.Precio = item.Precio;
-            nuevo.Stock = item.Stock;
-            nuevo.Estado = item.Estado;
-            nuevo.IdProveedor = item.IdProveedor;
-
-            listadoRecuperado.Add(nuevo);
-            }
-
-
-           
-            foreach (var item in listadoRecuperado)
-            {
-                ProductoVista nuevo = new ProductoVista();
-                nuevo.Id = item.Id;
-                nuevo.Codigo = item.Codigo;
-                nuevo.Nombre = item.Nombre;
-                nuevo.Precio = item.Precio;
-                nuevo.Stock = item.Stock;
-                nuevo.Estado = metodos.devolverEstado(item.Estado);
-                //nuevo.IdProveedor = item.IdProveedor;
-                listadoProductosVista.Add(nuevo);
-            }
-
             gvProductos.Rows.Clear();
-            gvProductos.DataSource = listadoProductosVista;
-           
+            gvProductos.DataSource = servicios.ListadoProductos();
             
         }
 
